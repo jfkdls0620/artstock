@@ -26,6 +26,11 @@ input[type=file],input[type=image],input[type=reset],input[type=button],input[ty
 button {border:0; outline:0; background:transparent; cursor:pointer;font-family: 'Apple SD Gothic Neo',arial,sans-serif}
 div{position:relative}
 .poppins{font-family: 'Poppins', sans-serif;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 .cf::before{content:''; display:block; clear:both;}
 .cf::after{content:''; display:block; clear:both;}

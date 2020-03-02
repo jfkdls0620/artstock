@@ -307,3 +307,71 @@ footer .copyright{
     color: #ffffff;
     padding-top: 33px;
 }
+
+/* 체크박스 */
+.checkbox{
+    display: inline-block;
+}
+.checkbox label{
+    display: inline-block;
+    position:relative;
+    line-height: 20px;
+    font-size:13px;
+    cursor: pointer;
+}
+
+.checkbox input{
+    display: none;
+}
+.checkbox .label__text i{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d8d8d8;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-right: 15px;
+}
+.checkbox input:checked + i{
+    border:1px solid #300766;
+    background-color: #300766;
+}
+
+.checkbox input:checked + i::after{
+    content:"";
+    display: block;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
+    width: 11px;
+    height: 5px;
+    border: 1px solid #ffffff;
+    border-width: 0 0 2.4px 2.4px;
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+}
+
+/* 버튼 */
+.btn{
+    width: 100%;
+    height:56px;
+    color: #fff;
+    font-size:13px;
+}
+.btn.login-btn{
+    background-color: #300766;
+    border-radius: 28px;
+    margin-top: 58px;
+}
+.btn.pwd-btn{
+    background-color: #651099;
+    border-radius: 10px;
+    margin-top: 40px;
+}
