@@ -111,13 +111,62 @@
 
 /* 회원가입 */
 .content.member .register-box{
-    padding: 85px 0 79px 106px;
+    padding: 85px 0 79px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #fff;
     border:1px solid #e4e4e4;
     text-align: left;
+    font-size:0;
+    margin-top: 90px;
 }
-.content.member .register-box>h2{
+.content.member .register-box .register-box__inner{
+    padding-left: 106px;
+}
+.content.member .register-box:first-child{
+    margin-top: 0;
+}
+.content.member .register-box .register-box__inner>h2{
     font-size:21px;
     font-weight: 600;
+}
+.content.member .register-box .register-box__inner>p{
+    font-size:13px;
+    line-height: 13px;
+    padding: 10px 0 50px;
+}
+.content.member ul.register-box__select{
+    margin-top: 50px;
+}
+.content.member ul.register-box__select li{
+    display: inline-block;
+    margin-right: 40px;
+}
+.content.member ul.register-box__select li input{
+    display: none;
+}
+
+.content.member ul.register-box__select li span{
+    display: block;
+    font-size:13px;
+    border:1px solid #222834;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    line-height: normal;
+    border-radius: 10px;
+    width: 160px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 14px 0;
+}
+.content.member ul.register-box__select li input:checked + span{
+    background-color: #9767cc;
+    border:1px solid #9767cc;
+    color:#fff;
+}
+
+.content.member .register-box .checkbox{
+    padding-left: 0;
+    display: block;
+    margin-bottom: 30px;
 }
