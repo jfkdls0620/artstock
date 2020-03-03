@@ -170,3 +170,16 @@
     display: block;
     margin-bottom: 30px;
 }
+.content.member .register-box .checkbox>p{
+    font-size:13px;
+    color:#808080;
+    padding: 5px 106px 5px 35px;
+}
+.content.member .register-box .checkbox>p span{
+    display: inline-block;
+    float:right;
+    cursor: pointer;
+    text-decoration: underline;
+    color:#808080;
+    font-weight: 600;
+}
