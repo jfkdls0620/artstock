@@ -21,6 +21,7 @@
     padding-top: 25px;
     font-size:13px;
     color: #7d7d7d;
+    font-weight: 400;
 }
 .content.member .input-or{
     display: block;
@@ -120,7 +121,25 @@
     margin-top: 90px;
 }
 .content.member .register-box .register-box__inner{
-    padding-left: 106px;
+    padding:0 106px;
+}
+.content.member .register-box .register-box__inner.register-box__02>h2{
+    padding-bottom: 97px;
+}
+.content.member .register-box .register-box__inner.register-box__02 .input-box{
+    margin-bottom: 12px;
+}
+.content.member .register-box .register-box__inner.register-box__02 .checkbox{
+    text-align: center;
+    margin-top: 70px;
+}
+.content.member .register-box .register-box__link{
+    text-align: center;
+}
+.content.member .register-box .register-box__link a{
+    display:inline-block;
+    font-size:13px;
+    font-weight: 500;
 }
 .content.member .register-box:first-child{
     margin-top: 0;
@@ -182,6 +201,37 @@
     text-decoration: underline;
     color:#808080;
     font-weight: 600;
+}
+
+.input-box__certification{
+    width: 100%;
+    position:relative;
+}
+.input-box__certification .input-box{
+    width: calc(100% - 183px);
+    display: inline-block;
+}
+.input-box__certification .btn.certification-btn{
+    background-color: #222834;
+    border-radius:10px;
+    width: 163px;
+    float:right;
+    vertical-align: top;
+}
+.input-box__certification.active .input-box{
+    border:2px solid #5e99ff;
+    position:relative;
+}
+.input-box__certification.active .input-box::after{
+    content:"* 인증 되었습니다";
+    display: inline-block;
+    position:absolute;
+    font-size:12px;
+    bottom:-29px;
+    right:0;
+    color:#5e99ff;
+    font-weight: 600;
+    font-family: 'Apple SD Gothic Neo', arial, sans-serif;
 }
 
 @media (max-width: 1024px){

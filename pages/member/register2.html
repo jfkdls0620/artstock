@@ -79,58 +79,42 @@
             </div>
             <div class="content__md">
                 <div class="register-box">
-                    <div class="register-box__inner" style="padding-right: 0;">
-                        <h2>1. 회원 분류 선택</h2>
-                        <ul class="register-box__select">
-                            <li>
-                                <label>
-                                    <input type="radio" name="chk-register" value="" checked>
-                                    <span>일반 회원</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="radio" name="chk-register" value="">
-                                    <span>개인 사업자</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label>
-                                    <input type="radio" name="chk-register" value="">
-                                    <span>법인 사업자</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register-box">
-                    <div class="register-box__inner">
-                        <h2>2. 약관 확인</h2>
-                        <p>약관에 동의하셔야 이용가능합니다.</p>
-                        <div class="checkbox">
-                            <label for="all_chk" class="label__text">
-                                <input type="checkbox" id="all_chk">
-                                <i></i>전체동의
-                            </label>
+                    <div class="register-box__inner register-box__02">
+                        <h2>개인정보 입력</h2>
+                        <div class="input-box">
+                            <input type="text" placeholder="이름 입력">
                         </div>
-                        <div class="checkbox">
-                            <label for="agree01" class="label__text">
-                                <input type="checkbox" id="agree01">
-                                <i></i>와디즈 서비스 이용약관 (필수)
-                            </label>
-                            <p class="mt20">회원가입 약관 <span onclick="fnShowPop('modal__agree-register')">내용보기</span></p>
-                            <p>리워드 서비스 이용약관 <span>내용보기</span></p>
-                            <p>리워드 서비스 이용약관 <span>내용보기</span></p>
+                        <div class="input-box">
+                            <input type="text" placeholder="성">
                         </div>
-                        <div class="checkbox">
-                            <label for="agree02" class="label__text">
-                                <input type="checkbox" id="agree02">
-                                <i></i>마케닝 정보 수신 (선택)
-                            </label>
-                            <p class="mt20">마케팅 정보를 수신하시면 와디즈의 이벤트 및 혜택을 받아보실 수 있습니다.</p>
+                        <div class="input-box">
+                            <input type="password" placeholder="비밀번호">
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="비밀번호 재확인">
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="이메일 계정 입력">
+                        </div>
+                        <div class="input-box__certification active">
+                            <div class="input-box">
+                                <input type="email" placeholder="인증 코드 입력">
+                            </div>
+                            <button type="button" class="btn certification-btn">인증번호 발송</button>
+                        </div>
+                        <div class="checkbox-wrap mt20">
+                            <div class="checkbox">
+                                <label for="login_chk" class="label__text">
+                                    <input type="checkbox" id="login_chk">
+                                    <i></i>서비스와 이용약관에 동의합니다.
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    <button class="btn apply-btn">확인</button>
+                    <button class="btn apply-btn">가입하기</button>
+                    <div class="register-box__link">
+                        <a href="login.html">이미 계정이 있으십니까?</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -172,27 +156,6 @@
     </footer>
     <!--// footer -->
 
-    <!-- 회원가입 약관 모달 -->
-    <div class="modal point_pop" id="modal__agree-register">
-        <div class="modal_container">
-            <div class="m_content">
-                <div class="tit">
-                    <span class="btn__close" onclick="fnHidePop('modal__agree-register')">닫기</span>
-                    <h2>회원가입 약관</h2>
-                </div>
-                <div class="con">
-                    <p>
-                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
-                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
-                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
-                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
-                    </p>
-                    <!--<button type="button" class="btn btn-apply" onclick="fnHidePop('modal__agree-register')">확인</button>-->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--// 회원가입 약관 모달  -->
 </div>
 <script src="../../js/jquery-3.4.1.min.js"></script>
 <script src="../../js/common.js"></script>
