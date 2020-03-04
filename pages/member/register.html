@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta name="Keywords" content="">
     <meta name="Description" content="">
@@ -23,7 +24,12 @@
             </ul>
             <div class="drop-box">
                 <div class="drop__content">
-                    <button type="button" class="drop__btn"><span>거래소</span></button>
+                    <button type="button" class="btn-drop btn__drop"><span>거래소</span></button>
+                    <button type="button" class="menu-trigger btn__drop">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <div class="drop__content-inner">
                         <ul>
                             <li><p class="not__arrow"><span>거래소</span></p></li>
@@ -112,7 +118,7 @@
                                 <input type="checkbox" id="agree01">
                                 <i></i>와디즈 서비스 이용약관 (필수)
                             </label>
-                            <p class="mt20">회원가입 약관 <span>내용보기</span></p>
+                            <p class="mt20">회원가입 약관 <span onclick="fnShowPop('modal__agree-register')">내용보기</span></p>
                             <p>리워드 서비스 이용약관 <span>내용보기</span></p>
                             <p>리워드 서비스 이용약관 <span>내용보기</span></p>
                         </div>
@@ -155,10 +161,38 @@
                 <li><a href="#">제휴 / 작가 등록 신청</a></li>
             </ul>
         </div>
-        <p class="copyright">Built by Neotrilabs - © 2019. ALL RIGHTS RESERVED.</p>
+        <p class="footertext">
+            <span>주식회사 아트스탁 |</span>
+            <span>대표: 김진호</span><br>
+            <span>(06167) 서울 강남구 삼성로100길 24-1 지층 T. 050-6191-8305 |</span>
+            <span>E. artstock.help@gmail.com |</span>
+            <span>사업자등록번호: 241-88-01549</span>
+        </p>
+        <p class="copyright">© 2020 ARTSTOCK All rights reserved.</p>
     </footer>
     <!--// footer -->
 
+    <!-- 회원가입 약관 모달 -->
+    <div class="modal point_pop" id="modal__agree-register">
+        <div class="modal_container">
+            <div class="m_content">
+                <div class="tit">
+                    <span class="btn__close" onclick="fnHidePop('modal__agree-register')">닫기</span>
+                    <h2>회원가입 약관</h2>
+                </div>
+                <div class="con">
+                    <p>
+                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
+                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
+                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
+                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
+                    </p>
+                    <!--<button type="button" class="btn btn-apply" onclick="fnHidePop('modal__agree-register')">확인</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 회원가입 약관 모달  -->
 </div>
 <script src="../../js/jquery-3.4.1.min.js"></script>
 <script src="../../js/common.js"></script>
