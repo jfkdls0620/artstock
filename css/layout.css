@@ -26,18 +26,19 @@
 .header .header-top>ul>li{
     display: inline-block;
     vertical-align: top;
-    margin: 0 32px;
+    margin: 0 28px;
 }
 .header .header-top>ul>li:last-child{
     margin-right: 80px;
 }
-.header .header-top>ul>li a{
+.header .header-top>ul>li .btn{
     display: block;
     background-repeat: no-repeat;
     background-position: center;
     background-size:22px;
     width: 37px;
     height: 37px;
+    font-size:0;
 }
 .header .header-top>ul>li.button__atc{
     margin-right: 0;
@@ -57,6 +58,19 @@
 .header .header-top>ul>li.button__atc a:hover{
     background-color:#5e99ff;
     color: #fff;
+}
+
+.header .header-top>ul>li.button__price .btn{
+    background-image: url("../images/icon/price_ico.svg");
+    background-size:36px;
+}
+.header .header-top>ul>li.button__login .btn{
+    background-image: url("../images/icon/login_ico.svg");
+    background-size:24px;
+}
+.header .header-top>ul>li.button__logout .btn{
+    background-image: url("../images/icon/logout_ico.svg");
+    background-size:24px;
 }
 .header .header-top>ul>li.button__search a{
     background-image: url("../images/icon/noun_Search.svg");
@@ -511,7 +525,7 @@ footer .copyright{
     }
 }
 @media (max-width: 1024px){
-    .wrap{
+    body{
         overflow-x: hidden;
     }
     .header .header-top{
