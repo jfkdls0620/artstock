@@ -65,12 +65,13 @@
     background-size:36px;
 }
 .header .header-top>ul>li.button__login .btn{
-    background-image: url("../images/icon/login_ico.svg");
-    background-size:24px;
+    /*background-image: url("../images/icon/login_ico.svg");*/
+    /*background-size:24px;*/
+    font-size:15px;
 }
 .header .header-top>ul>li.button__logout .btn{
-    background-image: url("../images/icon/logout_ico.svg");
-    background-size:24px;
+    /*background-image: url("../images/icon/logout_ico.svg");*/
+    /*background-size:24px;*/
 }
 .header .header-top>ul>li.button__search a{
     background-image: url("../images/icon/noun_Search.svg");
@@ -292,6 +293,36 @@
     width: 100%;
     min-height: 500px;
     background-color: #fff;
+}
+.content .content__sm{
+    max-width: 448px;
+    margin: 0 auto;
+}
+.content .content__md{
+    max-width: 762px;
+    margin: 0 auto;
+}
+.content .content__lg{
+    max-width: 1570px;
+    margin: 0 auto;
+}
+.content .shadow-box{
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #e4e4e4;
+}
+.content .shadow-box>h3{
+    font-size:20px;
+}
+
+.container .sub-title{
+    max-width: 1570px;
+    margin: 100px auto 0;
+}
+.container .sub-title h2{
+    font-size:40px;
+    line-height: normal;
+    color:#323334;
 }
 
 footer{

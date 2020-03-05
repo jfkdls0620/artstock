@@ -1,0 +1,38 @@
+/* 마이프로필 */
+.profile-box{
+    margin-top: 65px;
+    padding: 88px 106px 136px;
+    font-size:0;
+}
+.profile-box .info-box{
+    padding: 18px 0 0;
+}
+.profile-box .info-box ul li{
+    display: inline-block;
+    vertical-align: top;
+    width: 33.333%;
+    max-width: 349px;
+    margin-right: 75px;
+}
+.profile-box .info-box ul li:nth-child(3n){
+    margin-right: 0;
+}
+.profile-box .info-box ul li>span{
+    display: inline-block;
+    width: 106px;
+    font-size:13px;
+    line-height: 56px;
+    font-weight: 600;
+    color: #323334;
+}
+
+.profile-box .info-box ul li .input-box{
+    display: inline-block;
+    vertical-align:top;
+    max-width: 263px;
+    width: calc(100% - 106px);
+}
+.profile-box .info-box ul li .input-box input{
+    color:#323334;
+    font-weight: 600;
+}

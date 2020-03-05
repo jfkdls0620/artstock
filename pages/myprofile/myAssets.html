@@ -72,65 +72,35 @@
 
     <!-- container -->
     <section class="container">
-        <div class="content member">
-            <div class="title-box">
-                <h2>새로운 계정을 가입하시고, 수입을 창출해보세요 !</h2>
-                <h3>아트스탁을 통해, 미술품을 구매, 또는 주식처럼 거래하실 수 있습니다.</h3>
+        <div class="content">
+            <div class="sub-title">
+                <h2>마이 프로필</h2>
             </div>
-            <div class="content__md">
-                <div class="register-box">
-                    <div class="register-box__inner pr">
-                        <h2>1. 회원 분류 선택</h2>
-                        <ul class="register-box__select">
+            <div class="content-box content__lg">
+                <div class="shadow-box profile-box">
+                    <h3>회원 정보</h3>
+                    <div class="info-box">
+                        <ul>
                             <li>
-                                <label>
-                                    <input type="radio" name="chk-register" value="" checked>
-                                    <span>일반 회원</span>
-                                </label>
+                                <span>Email</span>
+                                <div class="input-box">
+                                    <input type="email" placeholder="이메일 계정 입력" value="aldsafdf@gmail.com">
+                                </div>
                             </li>
                             <li>
-                                <label>
-                                    <input type="radio" name="chk-register" value="">
-                                    <span>개인 사업자</span>
-                                </label>
+                                <span>주소</span>
+                                <div class="input-box">
+                                    <input type="text" placeholder="주소 입력" value="서울특별시 종로구 가회1가 2길">
+                                </div>
                             </li>
                             <li>
-                                <label>
-                                    <input type="radio" name="chk-register" value="">
-                                    <span>법인 사업자</span>
-                                </label>
+                                <span>Bank account</span>
+                                <div class="input-box">
+                                    <input type="email" placeholder="이메일 입력" value="aldsafdf@gmail.com">
+                                </div>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="register-box">
-                    <div class="register-box__inner">
-                        <h2>2. 약관 확인</h2>
-                        <p>약관에 동의하셔야 이용가능합니다.</p>
-                        <div class="checkbox">
-                            <label for="all_chk" class="label__text">
-                                <input type="checkbox" id="all_chk">
-                                <i></i>전체동의
-                            </label>
-                        </div>
-                        <div class="checkbox">
-                            <label for="agree01" class="label__text">
-                                <input type="checkbox" id="agree01">
-                                <i></i>와디즈 서비스 이용약관 (필수)
-                            </label>
-                            <p class="mt20">회원가입 약관 <span onclick="fnShowPop('modal__agree-register')">내용보기</span></p>
-                            <p>리워드 서비스 이용약관 <span>내용보기</span></p>
-                            <p>리워드 서비스 이용약관 <span>내용보기</span></p>
-                        </div>
-                        <div class="checkbox">
-                            <label for="agree02" class="label__text">
-                                <input type="checkbox" id="agree02">
-                                <i></i>마케닝 정보 수신 (선택)
-                            </label>
-                            <p class="mt20">마케팅 정보를 수신하시면 와디즈의 이벤트 및 혜택을 받아보실 수 있습니다.</p>
-                        </div>
-                    </div>
-                    <button class="btn apply-btn">확인</button>
                 </div>
             </div>
         </div>
@@ -172,29 +142,8 @@
     </footer>
     <!--// footer -->
 
-    <!-- 회원가입 약관 모달 -->
-    <div class="modal point_pop" id="modal__agree-register">
-        <div class="modal_container">
-            <div class="m_content">
-                <div class="tit">
-                    <span class="btn__close" onclick="fnHidePop('modal__agree-register')">닫기</span>
-                    <h2>회원가입 약관</h2>
-                </div>
-                <div class="con">
-                    <p>
-                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
-                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
-                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
-                        회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용회원가입 약관 내용
-                    </p>
-                    <!--<button type="button" class="btn btn-apply" onclick="fnHidePop('modal__agree-register')">확인</button>-->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--// 회원가입 약관 모달  -->
 </div>
-<script src="../../js/jquery-3.4.1.min.js"></script>
+<script src="../../js/jquery-1.12.4.min.js"></script><!-- 1.12.4 로 변경 -->
 <script src="../../js/common.js"></script>
 </body>
 </html>

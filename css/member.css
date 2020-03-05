@@ -1,14 +1,7 @@
 .content.member{
     padding: 133px 0 174px;
 }
-.content .content__sm{
-    width: 448px;
-    margin: 0 auto;
-}
-.content .content__md{
-    width: 762px;
-    margin: 0 auto;
-}
+
 .content.member .title-box{
     text-align: center;
     padding-bottom: 80px;
@@ -123,6 +116,9 @@
 .content.member .register-box .register-box__inner{
     padding:0 106px;
 }
+.content.member .register-box .register-box__inner.pr{
+    padding-right: 0;
+}
 .content.member .register-box .register-box__inner.register-box__02>h2{
     padding-bottom: 97px;
 }
@@ -183,7 +179,20 @@
     border:1px solid #9767cc;
     color:#fff;
 }
-
+.content.member .text-box{
+    padding-top: 15px;
+}
+.content.member .text-box p{
+    font-size:13px;
+    line-height: 20px;
+    padding: 0 90px;
+}
+.content.member .text-box p a{
+    display: inline-block;
+    float:right;
+    color:#7d7d7d;
+    font-weight: 600;
+}
 .content.member .register-box .checkbox{
     padding-left: 0;
     display: block;
@@ -234,6 +243,7 @@
     font-family: 'Apple SD Gothic Neo', arial, sans-serif;
 }
 
+
 @media (max-width: 1024px){
     .container{
         padding: 0 32px;
@@ -256,6 +266,9 @@
     }
     .content.member .register-box .register-box__inner{
         padding: 0 30px;
+    }
+    .content.member .register-box .register-box__inner.pr{
+        padding-right: 30px;
     }
     .content.member .register-box .register-box__inner>h2{
         font-size:16px;
@@ -284,4 +297,5 @@
     .content .input-box.select-phone input{
         width: calc(100% - 106px);
     }
+
 }
