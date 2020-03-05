@@ -10,24 +10,17 @@ $(function(){
         var $this = $(this);
         if(isMobileChk){//모바일일 경우
             if(isToggleChk){
-                var $rootScr = $("html").scrollTop() || $("body").scrollTop();
-                var objWrapStyl = {
-                    position: 'fixed',
-                    minHeight: $(window).height()+$rootScr+'px',
-                    top: ($rootScr*-1)+'px',
-                    width: '100%',
-                };
+                fnModalScrollStop();
+
                 $this.addClass("active");
                 $this.closest(".drop-box").addClass("on");
-                $('.wrap').css(objWrapStyl).data("top", $rootScr);
                 isToggleChk = false;
             }else{
-                var $previusScr = $(".wrap").data("top");
+                fnModalScrollOn();
 
                 $this.removeClass("active");
                 $this.closest(".drop-box").removeClass("on");
-                $('.wrap').attr("style", "");
-                $("html, body").animate({scrollTop: $previusScr}, 0);
+
                 isToggleChk = true;
             }
         }else{
@@ -53,6 +46,22 @@ $(function(){
 
 });
 
+function fnModalScrollStop(){
+    var $rootScr = $("html").scrollTop() || $("body").scrollTop();
+    var objWrapStyl = {
+        position: 'fixed',
+        minHeight: $(window).height()+$rootScr+'px',
+        top: ($rootScr*-1)+'px',
+        width: '100%',
+    };
+    $('.wrap').css(objWrapStyl).data("top", $rootScr);
+}
+
+function fnModalScrollOn(){
+    var $previusScr = $(".wrap").data("top");
+    $('.wrap').attr("style", "");
+    $("html, body").animate({scrollTop: $previusScr}, 0);
+}
 /*******************************************************************
  * @name fnShowPop
  * @description #0001 모달 열기
@@ -64,6 +73,7 @@ function fnShowPop(sGetName){
     var mHeight = $layer.find(".m_content").outerHeight()/2;
     $layer.find(".m_content").css({'margin-top':-mHeight});
     $layer.addClass("on");
+    fnModalScrollStop();
 }
 
 /*******************************************************************
@@ -74,6 +84,7 @@ function fnShowPop(sGetName){
  *******************************************************************/
 function fnHidePop(sGetName){
     $("#"+ sGetName).removeClass("on");
+    fnModalScrollOn();
 }
 
 /*******************************************************************
