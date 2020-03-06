@@ -86,7 +86,18 @@
     border-radius: 15px;
     top:50%;
     margin-top: -15px;
-    left:20px;
+    left:0;
+    line-height: 30px;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background-image: url("../images/icon/down-arrow.svg");
+    background-position: right 3px center;
+    background-size:11px 7px;
+    background-repeat: no-repeat;
+}
+.content .input-box.select-phone select::-ms-expand {
+    display: none; /* 화살표 없애기 for IE10, 11*/
 }
 .content .input-box.select-phone input{
     left:auto;

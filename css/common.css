@@ -40,6 +40,11 @@ label{display: block;}
 .fs{font-size:0;}
 .clearfix{zoom:1}
 
+.dot{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 .align_r{text-align:right;}
 .align_c{text-align:center;}
 .align_l{text-align:left;}

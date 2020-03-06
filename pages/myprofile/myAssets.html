@@ -13,95 +13,175 @@
 <body>
 <div class="wrap">
     <!-- header -->
-    <header class="header">
-        <div class="header-top">
-            <h1 class="logo"><a href="#"><img src="../../images/common/logo_header.png" alt="ARTSTOCK"></a></h1>
-            <ul>
-                <li class="button__atc"><a href="#">ATC 충전</a></li>
-                <li class="button__search"><a href="#">검색</a></li>
-                <li class="button__cart"><a href="#">장바구니</a></li>
-                <li class="button__my"><a href="#">마이페이지</a></li>
-            </ul>
-            <div class="drop-box">
-                <div class="drop__content">
-                    <button type="button" class="btn-drop btn__drop"><span>거래소</span></button>
-                    <button type="button" class="menu-trigger btn__drop">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <div class="drop__content-inner">
-                        <ul>
-                            <li><p class="not__arrow"><span>거래소</span></p></li>
-                            <li><p><span>공모</span></p></li>
-                            <li>
-                                <p><span>마이갤러리</span></p>
-                                <ul class="depth">
-                                    <li><a href="#">자산현황</a></li>
-                                    <li><a href="#">프로필</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p><span>자산현황</span></p>
-                                <ul class="depth">
-                                    <li><a href="#">test</a></li>
-                                    <li><a href="#">test</a></li>
-                                </ul>
-                            </li>
-                            <li><p><span>이용가이드</span></p></li>
-                            <li><p><span>ATC</span></p></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-search">
-            <ul>
-                <li><a href="#">Artworks</a></li>
-                <li><a href="#">Artist</a></li>
-            </ul>
-            <div class="search-box">
-                <div class="search-inner">
-                    <input type="text" placeholder="작품 및 작가를 입력 하세요.">
-                    <button type="submit">검색</button>
-                </div>
-            </div>
-        </div>
-    </header>
     <!--// header -->
 
     <!-- container -->
-    <section class="container">
+    <section class="container container-lg">
         <div class="content">
             <div class="sub-title">
                 <h2>마이 프로필</h2>
             </div>
             <div class="content-box content__lg">
                 <div class="shadow-box profile-box">
+
+                    <!-- 회원 정보 -->
                     <h3>회원 정보</h3>
                     <div class="info-box">
+                        <div class="info-box__form">
+                            <ul>
+                                <li>
+                                    <span>Email</span>
+                                    <div class="input-box">
+                                        <input type="email" placeholder="이메일 계정 입력" value="aldsafdf@gmail.com">
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>이름</span>
+                                    <div class="input-box">
+                                        <input type="email" placeholder="이름 입력" value="Chris">
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>성</span>
+                                    <div class="input-box">
+                                        <input type="email" placeholder="성 입력" value="Chris">
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>핸드폰 번호</span>
+                                    <div class="input-box">
+                                        <input type="number" placeholder="핸드폰 번호 입력" value="+82)193841123">
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>주소</span>
+                                    <div class="input-box">
+                                        <input type="text" placeholder="주소 입력" value="서울특별시 종로구 가회1가 2길">
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>우편번호</span>
+                                    <div class="input-box">
+                                        <input type="text" placeholder="우편번호 입력" value="00000">
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>국가</span>
+                                    <div class="input-box">
+                                        <select name="" id="">
+                                            <option value="">한국</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>보안레벨</span>
+                                    <div class="security-area active_level2">
+                                        <span>Level 2</span>
+                                        <a href="#">*더 높은 보안 레벨 취득하기 ></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>Bank account</span>
+                                    <div class="input-box">
+                                        <input type="email" placeholder=">Bank account 입력" value="aldsafdf@gmail.com">
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Referral code</span>
+                                    <div class="input-box">
+                                        <input type="email" placeholder="Referral code 입력" value="INPA8E">
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Referral URL</span>
+                                    <div class="input-box">
+                                        <input type="email" placeholder="Referral URL 입력"
+                                               value="http://localhost/join/INPA8E/join.do">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-area col-2 align-right">
+                            <ul>
+                                <li><a href="#" class="btn btn-dark">정보 수정</a></li>
+                                <li>
+                                    <button type="button" class="btn btn-purple">확인</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--// 회원 정보 -->
+
+                    <!-- 정보 변경 -->
+                    <h3>정보 변경</h3>
+                    <div class="btn-area col-2 align-left">
                         <ul>
-                            <li>
-                                <span>Email</span>
-                                <div class="input-box">
-                                    <input type="email" placeholder="이메일 계정 입력" value="aldsafdf@gmail.com">
-                                </div>
-                            </li>
-                            <li>
-                                <span>주소</span>
-                                <div class="input-box">
-                                    <input type="text" placeholder="주소 입력" value="서울특별시 종로구 가회1가 2길">
-                                </div>
-                            </li>
-                            <li>
-                                <span>Bank account</span>
-                                <div class="input-box">
-                                    <input type="email" placeholder="이메일 입력" value="aldsafdf@gmail.com">
-                                </div>
-                            </li>
+                            <li><a href="#" class="btn btn-white">비밀번호 변경</a></li>
+                            <li><a href="#" class="btn btn-white">알람 설정</a></li>
                         </ul>
                     </div>
-
+                    <!--// 정보 변경 -->
+                </div>
+                <div class="sub-title line">
+                    <h3>나의 소유 아트</h3>
+                </div>
+                <div class="grid-wrap">
+                    <div class="grid-wrap__list">
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__img"
+                                     style="background-image: url('../../images/e/dummy01.jpg')"></div>
+                                <dl>
+                                    <dt class="dot">Share a cupShare</dt>
+                                    <dd class="dot">Photos of her travel from previous</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__img"
+                                     style="background-image: url('../../images/e/dummy02.jpg')"></div>
+                                <dl>
+                                    <dt class="dot">Share a cupShare long~ long~ long~</dt>
+                                    <dd class="dot">Photos of her travel from previous</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__img"
+                                     style="background-image: url('../../images/e/dummy03.jpg')"></div>
+                                <dl>
+                                    <dt class="dot">Share a cupShare</dt>
+                                    <dd class="dot">Photos of her travel from previous</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__img"
+                                     style="background-image: url('../../images/e/dummy04.jpg')"></div>
+                                <dl>
+                                    <dt class="dot">Share a cupShare</dt>
+                                    <dd class="dot">Photos of her travel from previous</dd>
+                                </dl>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="item__img"
+                                     style="background-image: url('../../images/e/dummy03.jpg')"></div>
+                                <dl>
+                                    <dt class="dot">Share a cupShare</dt>
+                                    <dd class="dot">Photos of her travel from previous</dd>
+                                </dl>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,38 +189,6 @@
     <!--// container -->
 
     <!-- footer -->
-    <footer>
-        <div class="footer-inner">
-            <ul>
-                <li><h2>고객센터</h2></li>
-                <li><a href="#">문의하기</a></li>
-                <li><a href="#">법적공지</a></li>
-                <li><a href="#">구매 일반 약관</a></li>
-                <li><a href="#">고객후기</a></li>
-            </ul>
-            <ul>
-                <li><h2>회사 소개</h2></li>
-                <li><a href="#">Artstock 소개</a></li>
-                <li><a href="#">제휴작가</a></li>
-                <li><a href="#">블로그</a></li>
-                <li><a href="#">조직도</a></li>
-                <li><a href="#">작가 선별기준</a></li>
-                <li><a href="#">자주 묻는 질문</a></li>
-            </ul>
-            <ul>
-                <li><h2>신청</h2></li>
-                <li><a href="#">제휴 / 작가 등록 신청</a></li>
-            </ul>
-        </div>
-        <p class="footertext">
-            <span>주식회사 아트스탁 |</span>
-            <span>대표: 김진호</span><br>
-            <span>(06167) 서울 강남구 삼성로100길 24-1 지층 T. 050-6191-8305 |</span>
-            <span>E. artstock.help@gmail.com |</span>
-            <span>사업자등록번호: 241-88-01549</span>
-        </p>
-        <p class="copyright">© 2020 ARTSTOCK All rights reserved.</p>
-    </footer>
     <!--// footer -->
 
 </div>
