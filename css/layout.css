@@ -364,6 +364,11 @@
     line-height:24px;
     color:#323334;
 }
+.container .sub-title p{
+    font-size:14px;
+    color:#323334;
+    padding-top:24px;
+}
 
 /* 공통 인풋 */
 .content .input-box{
@@ -397,10 +402,10 @@
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
-    background-image: url("../images/icon/down-arrow.svg");
-    background-position: right 3px center;
+    background-image: url("../images/icon/Dropdown_arrow.svg");
     background-size:11px 7px;
     background-repeat: no-repeat;
+    background-position: right 3px center;
 }
 .content .input-box select::-ms-expand {
     display: none; /* 화살표 없애기 for IE10, 11*/
@@ -532,9 +537,25 @@ footer .copyright{
     box-sizing: border-box;
     margin-right: 15px;
 }
+
 .checkbox input:checked + i{
     border:1px solid #300766;
     background-color: #300766;
+}
+
+.checkbox.no-bg input:checked + i{
+    border:1px solid #d4d4d4;
+    background-color: #fff;
+    background-image: url("../images/icon/chk_ico.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:13px auto;
+}
+.checkbox.no-bg input:checked + i::after{
+    display: none;
+}
+.checkbox.no-bg input:checked ~ span{
+    color: #9767cc;
 }
 
 .checkbox input:checked + i::after{
@@ -882,6 +903,8 @@ footer .copyright{
     .container .sub-title h2{
         font-size:24px;
     }
+
+
     .content .shadow-box>h3{
         font-size:16px;
     }

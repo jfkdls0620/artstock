@@ -44,6 +44,12 @@ $(function(){
         });
     });
 
+
+    //서브 체크박스 리스트 토글
+    $(".list-select").on("click",".list-select__toggle",function(){
+        var $this = $(this);
+        $this.toggleClass("open");
+    })
 });
 
 function fnModalScrollStop(){
