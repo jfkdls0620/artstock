@@ -44,13 +44,25 @@ $(function(){
         });
     });
 
-
     //서브 체크박스 리스트 토글
     $(".list-select").on("click",".list-select__toggle",function(){
         var $this = $(this);
         $this.toggleClass("open");
-    })
+    });
+
+    //공모 디테일 이미지 리스트
+    $colusionThumList = $(".collusion-top__left>ul>li");
+    $colusionThumList.on("click","span",function(){
+        var $this = $(this);
+        var getSrc = $this.attr("style");
+        $colusionThumList.removeClass("active");
+        $this.closest("li").addClass("active");
+        $(".jq__thumnail").attr("style", getSrc);
+    });
+
 });
+
+
 
 function fnModalScrollStop(){
     var $rootScr = $("html").scrollTop() || $("body").scrollTop();
@@ -68,6 +80,7 @@ function fnModalScrollOn(){
     $('.wrap').attr("style", "");
     $("html, body").animate({scrollTop: $previusScr}, 0);
 }
+
 /*******************************************************************
  * @name fnShowPop
  * @description #0001 모달 열기

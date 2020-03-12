@@ -346,6 +346,352 @@ border:1px solid #222834
     padding: 106px 120px;
     border-top:1px solid #dcdcdc;
 }
+
+/* 공모 상세 */
+.container.collusion .content-box{
+    border-top:1px solid #dcdcdc;
+    margin-top: 80px;
+    padding-top: 70px;
+}
+
+.collusion-top,
+.collusion-bottom{
+    width: 1570px;
+    margin: 0 auto;
+}
+.collusion-top .collusion-top__left{
+    width: 40%;
+    display: inline-block;
+}
+.collusion-top .collusion-top__left .thum-img{
+    width: 100%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 50px;
+}
+.collusion-top .collusion-top__left ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin:0 0 0 -20px;
+}
+.collusion-top .collusion-top__left ul li{
+    display: inline-block;
+    margin:0 0 0 20px;
+    -webkit-box-flex: auto;
+    -ms-flex-positive: auto;
+    flex-grow: auto;
+    width: calc(100% * (1/6) - 20px);
+    vertical-align: top;
+}
+.collusion-top .collusion-top__left ul li span{
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.16);
+    position:relative;
+    cursor: pointer;
+}
+.collusion-top .collusion-top__left ul li.active span::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border:3px solid #9767cc;
+    background-color: rgba(0,0,0,.5);
+}
+
+.collusion-top .collusion-top__right{
+    width: 46%;
+    float:right;
+    padding:50px 84px 64px;
+}
+.collusion-top .collusion-top__right .title-box p{
+    color: #6a6a77;
+}
+.collusion-top .collusion-top__right .title-box p.title-box__main{
+    font-size:32px;
+    line-height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+}
+.collusion-top .collusion-top__right .title-box p.title-box__sub{
+    font-size:20px;
+    line-height:normal;
+    font-weight: 600;
+}
+.collusion-top .collusion-top__right .state-box{
+    margin: 70px 0 30px;
+    display: table;
+    width: 100%;
+}
+.collusion-top .collusion-top__right .state-box>div{
+    display: table-cell;
+}
+.collusion-top .collusion-top__right .state-box .state-box__image{
+    width: 87px;
+    height: 87px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 10px;
+    text-align: left;
+}
+.collusion-top .collusion-top__right .state-box .state-box__text{
+    text-align: right;
+    vertical-align: middle;
+}
+.collusion-top .collusion-top__right .state-box .state-box__text p{
+    font-family: 'Poppins', sans-serif;
+    font-size:25px;
+    line-height: 35px;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+.collusion-top .collusion-top__right .state-box .state-box__text p:last-child{
+    font-weight: 400;
+    font-family:'Roboto', sans-serif;
+}
+.collusion-top .collusion-top__right .state-box .state-box__text p span{
+    font-size:24px;
+    display: inline-block;
+    color:#9767cc;
+    font-weight: 600;
+    padding-right: 50px;
+}
+.collusion-top .collusion-top__right .content-text{
+    padding:50px 0 40px;
+    border-top:1px solid #e4e4e4;
+    border-bottom:1px solid #e4e4e4;
+}
+.collusion-top .collusion-top__right .content-text p{
+    font-size:14px;
+    color: #222834;
+    line-height: 17px;
+    letter-spacing: -0.025em;
+}
+.collusion-top .collusion-top__right ul.tag-list{
+    padding-top: 39px;
+}
+.collusion-top .collusion-top__right ul.tag-list li{
+    font-size:16px;
+    line-height: 24px;
+    color: #323334;
+    font-weight: 600;
+}
+.collusion-top .collusion-top__right .date-text{
+    font-size:20px;
+    line-height: 30px;
+    color: #222834;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.025em;
+    padding-top: 59px;
+    font-weight: 600;
+}
+
+.collusion-bottom{
+    padding-top: 100px;
+}
+.collusion-bottom>div.fl{
+    width: 40%;
+    float:left;
+}
+.collusion-bottom>div.fl .shadow-box{
+    padding: 40px 30px;
+}
+
+.collusion-bottom>div.fr{
+    width: 52%;
+    float:right;
+    min-height: 750px;
+}
+.collusion-bottom>div h2{
+    font-size:21px;
+    line-height: 21px;
+}
+.collusion-bottom>div .shadow-box{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/* 작품 공모 현황 */
+.collusion-bottom .collusion-bottom__state .state__percent{
+    font-family: 'Poppins', sans-serif;
+    color: #4d4c58;
+    font-size:47px;
+    line-height: 65px;
+}
+.collusion-bottom .collusion-bottom__state .progress-bar{
+    position:relative;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    border:1px solid #323334;
+}
+.collusion-bottom .collusion-bottom__state .progress-bar span{
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    left:0;
+    top:0;
+    border-radius: 5px;
+    background-color: #300766;
+}
+.collusion-bottom .collusion-bottom__state p.state__people{
+    margin-top: 30px;
+    font-size:24px;
+    line-height: 29px;
+    color: #414151;
+}
+.collusion-bottom .collusion-bottom__state p.state__date{
+    margin-top: 10px;
+    font-size:15px;
+    line-height: 19px;
+    color: rgba(110, 113, 121, 0.6);
+}
+
+/* 공모매수 */
+.collusion-bottom .collusion-bottom__buying{
+    padding: 80px 85px;
+}
+.collusion-bottom .collusion-bottom__buying table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.collusion-bottom .collusion-bottom__buying table th{
+    width: 231px;
+    text-align: left;
+    font-size:14px;
+    color: #222834;
+}
+.collusion-bottom .collusion-bottom__buying table td{
+    text-align: right;
+    padding: 16px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.collusion-bottom .collusion-bottom__buying table td .table-div{
+    display: table;
+    width: 100%;
+}
+.collusion-bottom .collusion-bottom__buying table td .table-div>div{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+.collusion-bottom .collusion-bottom__buying table td .table-div .table-div__th{
+    padding-right: 10px;
+}
+.collusion-bottom .collusion-bottom__buying table td .table-div .table-div__td{
+    padding-left: 10px;
+}
+
+.collusion-bottom .collusion-bottom__buying table td .input-box{
+    height: 49px;
+}
+.collusion-bottom .collusion-bottom__buying table td .input-box.input-box__total::after{
+    content:"ATCC";
+    display: inline-block;
+    position:absolute;
+    font-family: 'Poppins', sans-serif;
+    top:0;
+    right:20px;
+    line-height: 47px;
+    font-size:13px;
+    font-weight: 500;
+}
+.collusion-bottom .collusion-bottom__buying table td .input-box.input-box__total input{
+    padding-right: 40px;
+}
+.collusion-bottom .collusion-bottom__buying table td .input-box input{
+    line-height: 47px;
+    text-align: right;
+    font-size:13px;
+    font-family: 'Poppins', sans-serif;
+    color: #323334;
+    font-weight: 500;
+    padding: 0;
+}
+
+
+/* 공모 시 주의점 */
+.collusion-bottom .collusion-bottom__caution p{
+    font-size:14px;
+    color: #222834;
+    line-height: 24px;
+}
+.collusion-bottom .collusion-bottom__caution p:nth-child(2){
+    padding: 15px 0;
+}
+.collusion-bottom .collusion-bottom__caution p span{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+
+/* 총 보유자산 (ATC) */
+.collusion-bottom>div .collusion-bottom__atc{
+    width: 65%;
+}
+.collusion-bottom>div .collusion-bottom__atc .atc__area p{
+    letter-spacing: -0.05em;
+    font-weight: 600;
+}
+.collusion-bottom>div .collusion-bottom__atc .atc__area p.date span{
+    display: inline-block;
+    font-size:16px;
+    color: #242134;
+    line-height: 19px;
+    padding-right: 30px;
+    position:relative;
+}
+.collusion-bottom>div .collusion-bottom__atc .atc__area p.date span::after{
+    content:"";
+    display: block;
+    position:absolute;
+    top:5px;
+    right:0;
+    width: 0;
+    height: 0;
+}
+.collusion-bottom>div .collusion-bottom__atc .atc__area p.atc{
+    font-size:30px;
+    line-height:43px;
+    text-align: right;
+}
+.collusion-bottom>div .collusion-bottom__atc .atc__area.up p.date span::after{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #9767cc;
+}
+.collusion-bottom>div .collusion-bottom__atc .atc__area.up p.atc{
+    color: #9767cc;
+}
+.collusion-bottom>div .collusion-bottom__atc .atc__area.down p.date span::after{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #ff5e5e;
+}
+.collusion-bottom>div .collusion-bottom__atc .atc__area.down p.atc{
+    color: #ff5e5e;
+}
+
+
 @media (max-width: 1600px) {
     .grid-wrap__line{
         padding:60px 0;
@@ -449,7 +795,9 @@ border:1px solid #222834
     .sub-search .sub-search__select .select-box{
         margin-left: 0;
         margin-bottom: 10px;
+        margin-right: 10px;
     }
+
 
 }
 
@@ -492,4 +840,12 @@ border:1px solid #222834
     }
 
 }
+
+
+@media (max-width: 360px){
+    .sub-search .sub-search__select .select-box:nth-child(2) .input-box{
+        min-width: 172px;
+    }
+}
+
 
