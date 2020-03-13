@@ -731,6 +731,15 @@ border:1px solid #222834
         margin:90px 0 0 60px;
         width: calc(100% * (1/4) - 60px);
     }
+
+    .collusion-top, .collusion-bottom{
+        width: 100%;
+        padding: 50px 30px;
+    }
+    .collusion-bottom .collusion-bottom__buying table th{
+        width: 30%;
+        min-width: 130px;
+    }
 }
 
 @media (max-width: 1024px) {
