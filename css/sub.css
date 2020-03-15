@@ -372,7 +372,7 @@ border:1px solid #222834
     box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.16);
     margin-bottom: 50px;
 }
-.collusion-top .collusion-top__left ul{
+ul.thum-img__list{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -381,7 +381,7 @@ border:1px solid #222834
     flex-wrap:wrap;
     margin:0 0 0 -20px;
 }
-.collusion-top .collusion-top__left ul li{
+ul.thum-img__list li{
     display: inline-block;
     margin:0 0 0 20px;
     -webkit-box-flex: auto;
@@ -390,7 +390,7 @@ border:1px solid #222834
     width: calc(100% * (1/6) - 20px);
     vertical-align: top;
 }
-.collusion-top .collusion-top__left ul li span{
+ul.thum-img__list span{
     display: block;
     width: 100%;
     padding-top: 100%;
@@ -401,7 +401,7 @@ border:1px solid #222834
     position:relative;
     cursor: pointer;
 }
-.collusion-top .collusion-top__left ul li.active span::after{
+ul.thum-img__list li.active span::after{
     content:"";
     position:absolute;
     top:0;
@@ -691,6 +691,118 @@ border:1px solid #222834
     color: #ff5e5e;
 }
 
+/* 거래소 */
+.content__exchange{
+    max-width: 1570px;
+    margin: 80px auto 0;
+}
+.content__exchange>div.fl{
+    float:left;
+    width: 954px;
+}
+.content__exchange>div.fr{
+    float:right;
+    width: 510px;
+}
+.content__exchange>div>h3{
+    font-size:21px;
+    line-height: 21px;
+    color: #000;
+    padding-bottom: 40px;
+}
+
+/* 거래소 - 작품정보 */
+.content__exchange .exchange__info{
+    padding: 50px 106px 37px 86px;
+}
+.content__exchange .exchange__info .table-div{
+    display: table;
+    width: 100%;
+}
+.content__exchange .exchange__info .table-div>div{
+    display: table-cell;
+}
+.content__exchange .exchange__info .img-box{
+    margin-top: 30px;
+    width: 338px;
+    height: 338px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: inline-block;
+}
+.content__exchange .exchange__info .text-box{
+    position:relative;
+    text-align: right;
+    font-size:0;
+    width: calc(100% - 338px);
+    padding-left: 20px;
+}
+.content__exchange .exchange__info .text-box .text-box__percent{
+    display: block;
+    font-size:24px;
+    line-height:33px;
+    font-weight: 600;
+    color: #ff5e5e;
+}
+.content__exchange .exchange__info .text-box dl dt{
+    padding-top: 10px;
+    font-size:32px;
+    line-height: 48px;
+    color:#6a6a77;
+}
+.content__exchange .exchange__info .text-box dl dd{
+    font-size:20px;
+    line-height: 24px;
+    color: #6a6a77;
+}
+.content__exchange .exchange__info .text-box .text-box__atc{
+    font-size:16px;
+    color: #323334;
+    line-height: 23px;
+    padding-top: 43px;
+    font-weight: 600;
+}
+.content__exchange .exchange__info .text-box .text-box__pcs{
+    font-size:16px;
+    line-height: 19px;
+    color:#323334;
+}
+.content__exchange .exchange__info .text-box .thum-img{
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
+}
+
+.content__exchange .exchange__info .text-box .thum-img ul.thum-img__list{
+    margin:-10px 0 0 -12px;
+    justify-content: flex-end
+}
+.content__exchange .exchange__info .text-box .thum-img ul.thum-img__list li{
+    margin:10px 0 0 12px;
+    width: calc(100% * (1/5) - 12px);
+    max-width:62px;
+}
+
+.content__exchange .list-select{
+    padding: 60px 0;
+}
+.content__exchange .list-select>ul{
+    margin: 0;
+}
+
+.content__exchange .list-select>ul>li{
+    margin: 0 0 27px 0;
+    width: 100%;
+    display: block;
+}
+.content__exchange .sub-search{
+    margin-top: 0;
+}
+.content__exchange .sub-search .sub-search__input{
+    width: 100%;
+}
 
 @media (max-width: 1600px) {
     .grid-wrap__line{

@@ -51,11 +51,11 @@ $(function(){
     });
 
     //공모 디테일 이미지 리스트
-    $colusionThumList = $(".collusion-top__left>ul>li");
-    $colusionThumList.on("click","span",function(){
+    $thumList = $("ul.thum-img__list>li");
+    $thumList.on("click","span",function(){
         var $this = $(this);
         var getSrc = $this.attr("style");
-        $colusionThumList.removeClass("active");
+        $thumList.removeClass("active");
         $this.closest("li").addClass("active");
         $(".jq__thumnail").attr("style", getSrc);
     });
