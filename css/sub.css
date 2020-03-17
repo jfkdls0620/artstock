@@ -418,30 +418,46 @@ ul.thum-img__list li.active span::after{
     float:right;
     padding:50px 84px 64px;
 }
-.collusion-top .collusion-top__right .title-box p{
+.content .title-box{
+    position:relative;
+}
+.content .title-box p{
     color: #6a6a77;
 }
-.collusion-top .collusion-top__right .title-box p.title-box__main{
+.content .title-box p.title-box__main{
     font-size:32px;
     line-height: 45px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: -0.025em;
 }
-.collusion-top .collusion-top__right .title-box p.title-box__sub{
+.content .title-box p.title-box__sub{
     font-size:20px;
     line-height:normal;
     font-weight: 600;
 }
-.collusion-top .collusion-top__right .state-box{
+
+.content .title-box .title-box__image{
+    position:absolute;
+    top:0;
+    right:0;
+    width: 87px;
+    height: 87px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 10px;
+}
+
+.content .state-box{
     margin: 70px 0 30px;
     display: table;
     width: 100%;
 }
-.collusion-top .collusion-top__right .state-box>div{
+.content .state-box>div{
     display: table-cell;
 }
-.collusion-top .collusion-top__right .state-box .state-box__image{
+.content .state-box .state-box__image{
     width: 87px;
     height: 87px;
     background-position: center;
@@ -450,22 +466,22 @@ ul.thum-img__list li.active span::after{
     border-radius: 10px;
     text-align: left;
 }
-.collusion-top .collusion-top__right .state-box .state-box__text{
+.content .state-box .state-box__text{
     text-align: right;
     vertical-align: middle;
 }
-.collusion-top .collusion-top__right .state-box .state-box__text p{
+.content .state-box .state-box__text p{
     font-family: 'Poppins', sans-serif;
     font-size:25px;
     line-height: 35px;
     font-weight: 500;
     letter-spacing: -0.05em;
 }
-.collusion-top .collusion-top__right .state-box .state-box__text p:last-child{
+.content .state-box .state-box__text p:last-child{
     font-weight: 400;
     font-family:'Roboto', sans-serif;
 }
-.collusion-top .collusion-top__right .state-box .state-box__text p span{
+.content .state-box .state-box__text p span{
     font-size:24px;
     display: inline-block;
     color:#9767cc;
@@ -483,10 +499,10 @@ ul.thum-img__list li.active span::after{
     line-height: 17px;
     letter-spacing: -0.025em;
 }
-.collusion-top .collusion-top__right ul.tag-list{
+ul.tag-list{
     padding-top: 39px;
 }
-.collusion-top .collusion-top__right ul.tag-list li{
+ul.tag-list li{
     font-size:16px;
     line-height: 24px;
     color: #323334;
@@ -506,6 +522,7 @@ ul.thum-img__list li.active span::after{
 .collusion-bottom{
     padding-top: 100px;
 }
+
 .collusion-bottom>div.fl{
     width: 40%;
     float:left;
@@ -696,22 +713,25 @@ ul.thum-img__list li.active span::after{
     max-width: 1570px;
     margin: 80px auto 0;
 }
-.content__exchange>div.fl{
+.content__exchange .fl{
     float:left;
     width: 954px;
 }
-.content__exchange>div.fr{
+.content__exchange .fr{
     float:right;
     width: 510px;
 }
-.content__exchange>div>h3{
+
+
+.content__exchange h3{
     font-size:21px;
     line-height: 21px;
     color: #000;
-    padding-bottom: 40px;
+    padding-bottom: 21px;
 }
 
 /* 거래소 - 작품정보 */
+
 .content__exchange .exchange__info{
     padding: 50px 106px 37px 86px;
 }
@@ -786,7 +806,7 @@ ul.thum-img__list li.active span::after{
 }
 
 .content__exchange .list-select{
-    padding: 60px 0;
+    padding: 60px 0 0;
 }
 .content__exchange .list-select>ul{
     margin: 0;
@@ -804,6 +824,74 @@ ul.thum-img__list li.active span::after{
     width: 100%;
 }
 
+.content__exchange .sub-search .sub-search__select{
+    width: 100%;
+}
+.content__exchange .sub-search .sub-search__select .select-box:first-child{
+    margin-left: 0;
+}
+
+
+/* 거래소 - 작품개요 */
+.content__exchange .exchange-summary__box{
+    padding: 50px 86px;
+    margin-bottom: 86px;
+}
+
+.content__exchange .exchange-summary__box .title-box{
+    min-height: 87px;
+}
+
+.content__exchange .exchange-summary__box .text-box{
+    border-top:1px solid #e4e4e4;
+    border-bottom:1px solid #e4e4e4;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.content__exchange .exchange-summary{
+    padding-right: 20px;
+}
+.content__exchange .exchange-summary__box .text-box p{
+    font-size:14px;
+    line-height: 17px;
+    color: #222834;
+}
+
+.content__exchange .shadow-box.exchange-quote__box{
+    margin-bottom: 95px;
+}
+
+.content__exchange-bottom{
+    position:relative;
+    padding-right: 618px;
+}
+
+.total-work h3{
+   padding-top: 80px;
+}
+
+.total-work__list ul li a{
+    display: table;
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #e4e4e4;
+}
+.total-work__list ul li a>div{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.total-work__list ul li a .img-box{
+    width: 106px;
+    height: 106px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+/* 1600 */
 @media (max-width: 1600px) {
     .grid-wrap__line{
         padding:60px 0;
@@ -854,6 +942,8 @@ ul.thum-img__list li.active span::after{
     }
 }
 
+
+/* 1024 */
 @media (max-width: 1024px) {
     .container.container-lg {
         padding: 0 32px;

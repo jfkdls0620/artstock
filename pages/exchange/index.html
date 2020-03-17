@@ -22,7 +22,7 @@
                 <h2>거래소</h2>
                 <p>아트스탁(=미술품 거래소)가 정한 요건을 충족한 작품을 아트스탁에서 자유롭게 거래할 수 있는 권리를 주는 것을 말합니다.</p>
             </div>
-            <div class="content__exchange cf">
+            <div class="content__exchange">
                 <div class="fl">
                     <h3>작품 정보</h3>
                     <div class="shadow-box exchange__info cf">
@@ -54,122 +54,221 @@
                     </div>
                 </div>
                 <div class="fr">
-                    <div class="sub-search">
-                        <div class="sub-search__input">
-                            <input type="text" placeholder="작품 및 작가를 입력 하세요.">
-                            <button>검색</button>
+                <div class="sub-search">
+                    <div class="sub-search__input">
+                        <input type="text" placeholder="작품 및 작가를 입력 하세요.">
+                        <button>검색</button>
+                    </div>
+                </div>
+                <div class="list-select">
+                    <ul>
+                        <li>
+                            <div class="list-select__toggle">
+                                <p>SEARCH FOOR</p>
+                                <div class="depth">
+                                    <ul>
+                                        <li>
+                                            <div class="checkbox no-bg">
+                                                <label class="label__text">
+                                                    <input type="checkbox">
+                                                    <i></i><span>작품명 ( 29 )</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox no-bg">
+                                                <label class="label__text">
+                                                    <input type="checkbox">
+                                                    <i></i><span>작가 ( 32 )</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox no-bg">
+                                                <label class="label__text">
+                                                    <input type="checkbox">
+                                                    <i></i><span>공모상태 (184)</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox no-bg">
+                                                <label class="label__text">
+                                                    <input type="checkbox">
+                                                    <i></i><span>작가 ( 32 )</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-select__toggle">
+                                <p>STOCK TYPE</p>
+                                <div class="depth">
+                                    <ul>
+                                        <li>
+                                            <div class="checkbox no-bg">
+                                                <label class="label__text">
+                                                    <input type="checkbox">
+                                                    <i></i><span>STOCK TYPE ( 29 )</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox no-bg">
+                                                <label class="label__text">
+                                                    <input type="checkbox">
+                                                    <i></i><span>STOCK TYPE ( 32 )</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-select__toggle">
+                                <p>PCS/price</p>
+                                <div class="depth">
+                                    <ul>
+                                        <li>
+                                            <div class="checkbox no-bg">
+                                                <label class="label__text">
+                                                    <input type="checkbox">
+                                                    <i></i><span>작품명 ( 29 )</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox no-bg">
+                                                <label class="label__text">
+                                                    <input type="checkbox">
+                                                    <i></i><span>작가 ( 32 )</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox no-bg">
+                                                <label class="label__text">
+                                                    <input type="checkbox">
+                                                    <i></i><span>공모상태 (184)</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox no-bg">
+                                                <label class="label__text">
+                                                    <input type="checkbox">
+                                                    <i></i><span>작가 ( 32 )</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub-search">
+                    <div class="sub-search__select">
+                        <div class="select-box">
+                            <span>스탁 표시 :</span>
+                            <div class="input-box">
+                                <select>
+                                    <option value="">30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="select-box">
+                            <span>정렬 순 :</span>
+                            <div class="input-box">
+                                <select>
+                                    <option value="">Popular</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <div class="list-select">
+                </div>
+            </div>
+                <div class="fl exchange-summary">
+                    <h3 class="mt40">작품 개요</h3>
+                    <div class="shadow-box exchange-summary__box">
+                        <div class="title-box">
+                            <p class="title-box__main dot">Foxes on the Hill</p>
+                            <p class="title-box__sub dot">헤네시 제인</p>
+                            <div class="title-box__image" style="background-image: url('../../images/e/dummy02.jpg')"></div>
+                        </div>
+                        <div class="text-box">
+                            <p>작품을 만들 때, 내 마음은 다른 차원에 있으며, 이전에는 본 적이없는 독특하고 놀라운 것을 찾고 있습니다. » 패트릭 코네 (Patrick Cornée)는
+                                프랑스, 중국, 러시아, 영국, 프랑스 등에서 국제적으로 그의 작품을 전시 한 프랑스의 화가이자 조각가이다. 앤디 워홀 (Andy Warhol)과 팝 아트
+                                (Pop Art) 운동에서 영감을 얻은 그는 유머러스 한 인물과 시각으로 가득 찬 색채로 가득 찬 작품을 작곡합니다. 코네는 궁극적으로 그의 그림과 조각을
+                                통해 기쁨, 에너지와 삶의 사랑을 표현하고자합니다.</p>
+                        </div>
+                        <ul class="tag-list">
+                            <li>신예 작가</li>
+                            <li>국내 유명작가</li>
+                            <li>국내 공기관 소장작품 작가</li>
+                            <li>작품의뢰 가능</li>
+                        </ul>
+                        <div class="btn-area align-right">
+                            <ul>
+                                <li><a href="#" class="btn btn-white btn-sm">더 보기</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr total-work">
+                    <h3>총 2300개의 등록된 작품</h3>
+                    <div class="total-work__list">
                         <ul>
                             <li>
-                                <div class="list-select__toggle">
-                                    <p>SEARCH FOOR</p>
-                                    <div class="depth">
-                                        <ul>
-                                            <li>
-                                                <div class="checkbox no-bg">
-                                                    <label class="label__text">
-                                                        <input type="checkbox">
-                                                        <i></i><span>작품명 ( 29 )</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox no-bg">
-                                                    <label class="label__text">
-                                                        <input type="checkbox">
-                                                        <i></i><span>작가 ( 32 )</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox no-bg">
-                                                    <label class="label__text">
-                                                        <input type="checkbox">
-                                                        <i></i><span>공모상태 (184)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox no-bg">
-                                                    <label class="label__text">
-                                                        <input type="checkbox">
-                                                        <i></i><span>작가 ( 32 )</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                <a href="#">
+                                    <div class="img-box" style="background-image:url('../../images/e/dummy04.jpg')"></div>
+                                    <div class="txt-box">
+
                                     </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list-select__toggle">
-                                    <p>STOCK TYPE</p>
-                                    <div class="depth">
-                                        <ul>
-                                            <li>
-                                                <div class="checkbox no-bg">
-                                                    <label class="label__text">
-                                                        <input type="checkbox">
-                                                        <i></i><span>STOCK TYPE ( 29 )</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox no-bg">
-                                                    <label class="label__text">
-                                                        <input type="checkbox">
-                                                        <i></i><span>STOCK TYPE ( 32 )</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list-select__toggle">
-                                    <p>PCS/price</p>
-                                    <div class="depth">
-                                        <ul>
-                                            <li>
-                                                <div class="checkbox no-bg">
-                                                    <label class="label__text">
-                                                        <input type="checkbox">
-                                                        <i></i><span>작품명 ( 29 )</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox no-bg">
-                                                    <label class="label__text">
-                                                        <input type="checkbox">
-                                                        <i></i><span>작가 ( 32 )</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox no-bg">
-                                                    <label class="label__text">
-                                                        <input type="checkbox">
-                                                        <i></i><span>공모상태 (184)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="checkbox no-bg">
-                                                    <label class="label__text">
-                                                        <input type="checkbox">
-                                                        <i></i><span>작가 ( 32 )</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+                <div class="fl exchange-quote">
+                    <h3>호가 현황</h3>
+                    <div class="shadow-box exchange-quote__box">
+                        <table class="table align-c">
+                            <thead>
+                                <tr>
+                                    <th>일반 호가</th>
+                                    <th>체결</th>
+                                    <th>누적호가</th>
+                                    <th>일별</th>
+                                    <th>호가 주문</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Fastening amount</strong></td>
+                                    <td>0.0123</td>
+                                    <td><strong>8,777,345</strong></td>
+                                    <td><span class="percent percent__orange">-2.03 %</span></td>
+                                    <td><strong>8,777,345</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>8,777,345</td>
+                                    <td>0.0123</td>
+                                    <td><strong>8,777,345</strong></td>
+                                    <td><span class="percent percent__blue">-2.03 %</span></td>
+                                    <td><strong>8,777,345</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="fl exchange-quote">
+                    <h3>거래 개입</h3>
+                    <div class="shadow-box">
                     </div>
                 </div>
             </div>
