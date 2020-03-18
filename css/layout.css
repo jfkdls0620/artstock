@@ -1125,9 +1125,10 @@ table.table td span.percent.percent__orange {
     .content .security-area a {
         bottom: -5px;
     }
-}
 
-@media (max-width: 768px) {
+    .btn-area{
+        margin-top: 50px;
+    }
     .btn-area.col-2 {
         text-align: left;
     }
@@ -1140,6 +1141,7 @@ table.table td span.percent.percent__orange {
     .btn-area.col-2 li {
         max-width: 48%;
         width: 48%;
+        padding: 0;
     }
 
     .btn-area.col-2 li:last-child {
@@ -1153,4 +1155,8 @@ table.table td span.percent.percent__orange {
     .btn-area.align-left ul li {
         padding: 0;
     }
+}
+
+@media (max-width: 768px) {
+
 }
