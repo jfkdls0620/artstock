@@ -582,46 +582,46 @@ ul.tag-list li{
 }
 
 /* 공모매수 */
-.collusion-bottom .collusion-bottom__buying{
+.collusion-bottom__buying{
     padding: 80px 85px;
 }
-.collusion-bottom .collusion-bottom__buying table{
+.collusion-bottom__buying table{
     width: 100%;
     border-collapse: collapse;
 }
-.collusion-bottom .collusion-bottom__buying table th{
+.collusion-bottom__buying table th{
     width: 231px;
     text-align: left;
     font-size:14px;
     color: #222834;
 }
-.collusion-bottom .collusion-bottom__buying table td{
+.collusion-bottom__buying table td{
     text-align: right;
     padding: 16px 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
-.collusion-bottom .collusion-bottom__buying table td .table-div{
+.collusion-bottom__buying table td .table-div{
     display: table;
     width: 100%;
 }
-.collusion-bottom .collusion-bottom__buying table td .table-div>div{
+.collusion-bottom__buying table td .table-div>div{
     display: table-cell;
     width: 50%;
     vertical-align: middle;
 }
-.collusion-bottom .collusion-bottom__buying table td .table-div .table-div__th{
+.collusion-bottom__buying table td .table-div .table-div__th{
     padding-right: 10px;
 }
-.collusion-bottom .collusion-bottom__buying table td .table-div .table-div__td{
+.collusion-bottom__buying table td .table-div .table-div__td{
     padding-left: 10px;
 }
 
-.collusion-bottom .collusion-bottom__buying table td .input-box{
+.collusion-bottom__buying table td .input-box{
     height: 49px;
 }
-.collusion-bottom .collusion-bottom__buying table td .input-box.input-box__total::after{
+.collusion-bottom__buying table td .input-box.input-box__total::after{
     content:"ATCC";
     display: inline-block;
     position:absolute;
@@ -632,10 +632,10 @@ ul.tag-list li{
     font-size:13px;
     font-weight: 500;
 }
-.collusion-bottom .collusion-bottom__buying table td .input-box.input-box__total input{
+.collusion-bottom__buying table td .input-box.input-box__total input{
     padding-right: 40px;
 }
-.collusion-bottom .collusion-bottom__buying table td .input-box input{
+.collusion-bottom__buying table td .input-box input{
     line-height: 47px;
     text-align: right;
     font-size:13px;
@@ -711,7 +711,7 @@ ul.tag-list li{
 /* 거래소 */
 .content__exchange{
     max-width: 1570px;
-    margin: 80px auto 0;
+    margin: 80px auto 150px;
 }
 .content__exchange .fl{
     float:left;
@@ -872,25 +872,151 @@ ul.tag-list li{
    padding-top: 80px;
 }
 
-.total-work__list ul li a{
-    display: table;
-    width: 100%;
+.total-work__list ul li{
+    margin-bottom: 20px;
+    position: relative;
+}
+.total-work__list ul li .total-work__list-box{
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     border: solid 1px #e4e4e4;
-}
-.total-work__list ul li a>div{
-    display: table-cell;
-    vertical-align: middle;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.total-work__list ul li a .img-box{
+
+.total-work__list ul li .total-work__list-box .txt-box{
+    padding-left: 106px;
+    height: 106px;
+    position:relative;
+}
+.total-work__list ul li .total-work__list-box .txt-box .txt-box__image{
+    display: block;
     width: 106px;
     height: 106px;
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    position:absolute;
+    top:0;
+    left:0;
 }
 
+.total-work__list ul li .total-work__list-box .txt-box .inner-wrap{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.total-work__list ul li .total-work__list-box .txt-box .inner-box{
+    display: table-cell;
+    width:0;
+    max-width: 0;
+    vertical-align: middle;
+}
+.total-work__list ul li .total-work__list-box .txt-box .inner-box .inner-box__vertical{
+    display: inline-block;
+    vertical-align: middle;
+}
+.total-work__list ul li .total-work__list-box .txt-box .inner-box span{
+    display: block;
+    font-size:18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 20px;
+}
+.total-work__list ul li .total-work__list-box .txt-box .inner-box:first-child{
+    text-align: left;
+}
+.total-work__list ul li .total-work__list-box .txt-box .inner-box:last-child{
+    text-align: right;
+}
+.total-work__list ul li .total-work__list-box .txt-box .inner-box .inner-box__title{
+    font-size:16px;
+    line-height: 25px;
+    color: #222834;
+    font-weight: 500;
+}
+.total-work__list ul li .total-work__list-box .txt-box .inner-box .inner-box__ratio{
+    font-weight: 600;
+}
+.total-work__list ul li .total-work__list-box .txt-box .inner-box .inner-box__atc{
+    font-weight: 600;
+}
+.total-work__list ul li .total-work__list-box .txt-box .inner-box .inner-box__pcs{
+    font-size:14px;
+}
+
+.total-work__list ul li .total-work__list-box::after{
+    content:"";
+    display: block;
+    width: calc(100% - 4px);
+    height:calc(100% - 4px);
+    position:absolute;
+    top:0;
+    left:0;
+    border:2px solid #9767cc;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.total-work__list ul li:hover .total-work__list-box::after{
+    opacity: 1;
+}
+.total-work__list ul li:hover .txt-box .inner-box .inner-box__title,
+.total-work__list ul li:hover .txt-box .inner-box .inner-box__atc,
+.total-work__list ul li:hover .txt-box .inner-box .inner-box__pcs{
+    color: #9767cc;
+}
+
+.exchange-intervention .collusion-bottom__buying{
+    padding: 0 0 122px 0;
+}
+.exchange-intervention .collusion-bottom__buying table th {
+    width: 357px;
+    padding-left: 85px;
+}
+.exchange-intervention .collusion-bottom__buying table td{
+    padding-right: 85px;
+}
+.exchange-intervention .btn-area{
+    padding-right: 85px;
+}
+
+.intervention-header{
+    font-size:0;
+    margin-bottom: 40px;
+}
+.intervention-header ul{
+    display: table;
+    width: 100%;
+}
+.intervention-header ul li{
+    display: table-cell;
+    max-width: 0;
+    text-align: center;
+    padding: 22px 0;
+}
+.intervention-header ul li span{
+    font-size:16px;
+    font-weight: 600;
+    color: #222834;
+    display: inline-block;
+    position:relative;
+}
+.intervention-header ul li span.active{
+    color: #9767cc;
+    padding-right:17px;
+}
+.intervention-header ul li span.active::after{
+    content:"";
+    position:absolute;
+    width: 8px;
+    height: 8px;
+    top:50%;
+    right:0;
+    margin-top: -4px;
+    background-color:#9767cc ;
+    border-radius: 50%;
+}
 
 /*---------------------- 1600 ------------------------*/
 @media (max-width: 1600px) {
@@ -938,11 +1064,11 @@ ul.tag-list li{
         width: 100%;
         padding: 50px 30px;
     }
-    .collusion-bottom .collusion-bottom__buying table th{
+    .collusion-bottom__buying table th{
         width: 30%;
         min-width: 130px;
     }
-    .collusion-bottom .collusion-bottom__buying{
+    .collusion-bottom__buying{
         padding: 50px 30px;
     }
     .collusion-bottom>div.fr{
@@ -1208,16 +1334,53 @@ ul.tag-list li{
         text-align: right;
     }
 
-    .collusion-bottom .collusion-bottom__buying table th{
+    .collusion-bottom__buying table th{
         min-width: 70px;
     }
-    .collusion-bottom .collusion-bottom__buying table td .table-div .table-div__th{
+    .collusion-bottom__buying table td .table-div .table-div__th{
         padding-right: 0;
     }
 
-    .collusion-bottom .collusion-bottom__buying table td .table-div .table-div__td{
+    .collusion-bottom__buying table td .table-div .table-div__td{
         display: none;
     }
+
+
+    .content__exchange{
+        display: flex;
+        flex-direction:column;
+    }
+    .content__exchange .fl{
+        width: 100%;
+        float:none;
+    }
+    .content__exchange .fr{
+        width: 100%;
+        float:none;
+    }
+
+    .content__exchange>div:nth-child(2){
+        order:1
+    }
+    .content__exchange>div:nth-child(1){
+        order:2
+    }
+
+    .content__exchange .exchange-summary{
+        order:3
+    }
+    .content__exchange .exchange-quote{
+        order:4
+    }
+    .content__exchange .exchange-intervention{
+        order:5
+    }
+
+    .content__exchange .total-work{
+        order:6
+    }
+
+
 }
 
 @media (max-width: 768px){

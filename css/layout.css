@@ -929,13 +929,16 @@ table.table td span.percent {
     font-weight: 500;
 }
 
-table.table td span.percent.percent__blue {
+.ratio__blue,
+.percent__blue {
     color: #5e99ff;
 }
 
-table.table td span.percent.percent__orange {
+.ratio__orange,
+.percent__orange {
     color: #ff5e5e;
 }
+
 
 
 /*---------------------------- 1600 --------------------------------*/
