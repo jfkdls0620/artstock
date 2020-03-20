@@ -23,7 +23,7 @@
                 <p>아트스탁(=미술품 거래소)가 정한 요건을 충족한 작품을 아트스탁에서 자유롭게 거래할 수 있는 권리를 주는 것을 말합니다.</p>
             </div>
             <div class="content__exchange cf">
-                <div class="fl">
+                <div class="fl info-exchange">
                     <h3>작품 정보</h3>
                     <div class="shadow-box exchange__info cf">
                         <div class="table-div">
@@ -32,13 +32,15 @@
                             >
                             </div>
                             <div class="text-box">
-                                <span class="text-box__percent">+12.37%</span>
-                                <dl>
-                                    <dt>Foxes on the Hill</dt>
-                                    <dd>헤네시 제인</dd>
-                                </dl>
-                                <p class="text-box__atc">5000 ATC</p>
-                                <p class="text-box__pcs">1/10 PCS</p>
+                                <div class="pc__only">
+                                    <span class="text-box__percent">+12.37%</span>
+                                    <dl>
+                                        <dt>Foxes on the Hill</dt>
+                                        <dd>헤네시 제인</dd>
+                                    </dl>
+                                    <p class="text-box__atc">5000 ATC</p>
+                                    <p class="text-box__pcs">1/10 PCS</p>
+                                </div>
                                 <div class="thum-img">
                                     <ul class="thum-img__list">
                                         <li class="active"><span
@@ -53,7 +55,7 @@
                         </div><!--// table-div -->
                     </div>
                 </div>
-                <div class="fr">
+                <div class="fr content__exchange-search">
                     <div class="sub-search">
                         <div class="sub-search__input">
                             <input type="text" placeholder="작품 및 작가를 입력 하세요.">
@@ -171,7 +173,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="sub-search">
+                    <div class="sub-search sub-search__form">
                         <div class="sub-search__select">
                             <div class="select-box">
                                 <span>스탁 표시 :</span>
@@ -213,11 +215,11 @@
                             <li>국내 공기관 소장작품 작가</li>
                             <li>작품의뢰 가능</li>
                         </ul>
-                        <div class="btn-area align-right">
-                            <ul>
-                                <li><a href="#" class="btn btn-white btn-sm">더 보기</a></li>
-                            </ul>
-                        </div>
+                        <!--<div class="btn-area align-right">-->
+                            <!--<ul>-->
+                                <!--<li><a href="#" class="btn btn-white btn-sm">더 보기</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
                     </div>
                 </div>
                 <div class="fr total-work">
@@ -433,11 +435,51 @@
                         </div>
 
                         <div class="tab-content" id="tab03">
-                            33
+                            <table class="table align-c">
+                                <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>주문시간</th>
+                                    <th>가격</th>
+                                    <th>수량</th>
+                                    <th>미체결량</th>
+                                    <th>상태</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Fastening amount</td>
+                                        <td>0.0123</td>
+                                        <td><strong>8,777,345</strong></td>
+                                        <td>23123</td>
+                                        <td><strong>8,777,345</strong></td>
+                                        <td>test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
 
                         <div class="tab-content" id="tab04">
-                            44
+                            <table class="table align-c">
+                                <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>시간</th>
+                                    <th>가격 (ATC)</th>
+                                    <th>수량 (GH_PN_1)</th>
+                                    <th>거래금액(ATC)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Fastening amount</td>
+                                    <td>0.0123</td>
+                                    <td><strong>8,777,345</strong></td>
+                                    <td>23123</td>
+                                    <td><strong>8,777,345</strong></td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -453,10 +495,10 @@
 <script src="../../js/jquery-1.12.4.min.js"></script><!-- 1.12.4 로 변경 -->
 <script src="../../js/common.js"></script>
 <script>
-    $(function(){
+    $(function () {
         $(".tab-content").hide();
         $(".tab-content:first").show();
-        $("ul.tab__list").on("click","li",function(){
+        $("ul.tab__list").on("click", "li", function () {
             var $this = $(this);
             $("ul.tab__list li").find("span").removeClass("active");
             $this.find("span").addClass("active");

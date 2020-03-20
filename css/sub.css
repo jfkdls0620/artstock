@@ -977,6 +977,18 @@ ul.tag-list li{
 .exchange-intervention .collusion-bottom__buying table td{
     padding-right: 85px;
 }
+
+.exchange-intervention .collusion-bottom__buying table.table th{
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+}
+.exchange-intervention .collusion-bottom__buying table.table td{
+    text-align: center;
+    padding: 20px 10px;
+}
+
 .exchange-intervention .btn-area{
     padding-right: 85px;
 }
@@ -1366,7 +1378,6 @@ ul.tag-list li{
     .content__exchange>div:nth-child(1){
         order:2
     }
-
     .content__exchange .exchange-summary{
         order:3
     }
@@ -1376,12 +1387,142 @@ ul.tag-list li{
     .content__exchange .exchange-intervention{
         order:5
     }
-
     .content__exchange .total-work{
         order:6
     }
+    .content__exchange{
+        padding: 0;
+        margin-top: 40px;
+    }
 
+    .content__exchange-search{
+        position:relative;
+    }
+    .content__exchange-search .sub-search.sub-search__form{
+        position:absolute;
+        width: 100%;
+        top:76px;
+        left: 0;
+    }
+    .content__exchange .list-select{
+        padding-top: 140px;
+    }
 
+    /* 거래소 - 작품정보 */
+    .exchange-summary h3,
+    .info-exchange h3{
+        display: none;
+    }
+    .content__exchange .exchange__info{
+        padding: 0;
+        box-shadow: none;
+        border:0;
+    }
+    .content__exchange .exchange__info .table-div>div{
+        display: block;
+        width: 100%;
+    }
+    .content__exchange .exchange__info .img-box{
+        padding-top: 100%;
+        box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.16);
+    }
+    .content__exchange .exchange__info .text-box{
+        padding: 0;
+        text-align: left;
+        margin-top: 30px;
+    }
+    .content__exchange .exchange__info .text-box .thum-img{
+        position:relative;
+    }
+    .content__exchange .exchange__info .text-box .thum-img ul.thum-img__list{
+        justify-content: flex-start;
+    }
+
+    .content__exchange .exchange-summary{
+        padding: 0;
+    }
+    .content__exchange .exchange-summary__box{
+        margin-top: 60px;
+        padding: 30px 28px;
+    }
+    .content .title-box .title-box__image{
+        position:relative;
+        top:auto;
+        left:auto;
+        margin: 20px auto 0;
+    }
+    .content__exchange .exchange-summary__box .btn-area{
+        display: none;
+    }
+    .content__exchange .exchange-summary__box .text-box p{
+        font-size:12px;
+        line-height: 15px;
+    }
+    .content__exchange .shadow-box.exchange-quote__box{
+        overflow-x: auto;
+    }
+    .content__exchange .shadow-box.exchange-quote__box .table th{
+        min-width: 120px;
+    }
+
+    .intervention-header ul{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .intervention-header ul li{
+        display: inline-block;
+        width: 50%;
+        max-width: 50%;
+        padding: 10px 0;
+    }
+
+    .exchange-intervention .collusion-bottom__buying table th{
+        padding-left: 19px;
+        width: 120px;
+        min-width: 70px;
+        font-size:13px;
+    }
+    .exchange-intervention .collusion-bottom__buying{
+        padding-bottom: 30px;
+    }
+    .exchange-intervention .collusion-bottom__buying table td{
+        padding-right: 19px;
+        font-size:13px;
+    }
+    .exchange-intervention .collusion-bottom__buying .tab-content{
+        overflow-x: auto;
+    }
+
+    .exchange-intervention .collusion-bottom__buying table.table th{
+        min-width: 120px;
+    }
+    .exchange-intervention .btn-area{
+        padding-right: 0;
+    }
+    .btn-area.align-right{
+        text-align: center;
+    }
+
+    .total-work__list ul li .total-work__list-box .txt-box .txt-box__image{
+        width: 80px;
+        height: 80px;
+    }
+    .total-work__list ul li .total-work__list-box .txt-box {
+        padding-left: 80px;
+        height: 80px;
+    }
+    .total-work__list ul li .total-work__list-box .txt-box .inner-box:first-child{
+        width: 55%;
+    }
+    .total-work__list ul li .total-work__list-box .txt-box .inner-box span{
+        font-size:14px;
+        padding: 0 10px;
+    }
+    .total-work__list ul li .total-work__list-box .txt-box .inner-box .inner-box__title{
+        font-size:14px;
+        letter-spacing: -0.025em;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 768px){
