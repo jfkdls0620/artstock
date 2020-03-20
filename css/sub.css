@@ -994,6 +994,7 @@ ul.tag-list li{
     max-width: 0;
     text-align: center;
     padding: 22px 0;
+    cursor: pointer;
 }
 .intervention-header ul li span{
     font-size:16px;
