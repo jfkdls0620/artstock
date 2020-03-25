@@ -1801,6 +1801,51 @@ ul.tab__list li span.active::after{
         border-color: #651099;
         box-shadow: 0 0 3px #651099 inset;
     }
+
+    .btn__more{
+        position:absolute;
+        top:9px;
+        right:-5px;
+        width: 30px;
+        height: 30px;
+    }
+    .btn__more .btn{
+        display: block;
+        width: 100%;
+        height: 100%;
+        position:relative;
+        font-size:0;
+    }
+    .btn__more .btn::before,
+    .btn__more .btn:after{
+        content:"";
+        display: block;
+        position:absolute;
+        top:50%;
+        width: 4px;
+        height: 4px;
+        margin-top: -2px;
+        border-radius: 2px;
+        background-color:#323334 ;
+    }
+    .btn__more .btn::before{
+        left:5px;
+    }
+    .btn__more .btn::after{
+        right:5px;
+    }
+    .btn__more .btn span{
+        display: block;
+        position:absolute;
+        top:50%;
+        left:50%;
+        width: 4px;
+        height: 4px;
+        margin-left: -2px;
+        margin-top: -2px;
+        border-radius: 2px;
+        background-color:#323334 ;
+    }
 }
 
 @media (max-width: 768px){
