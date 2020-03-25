@@ -526,6 +526,16 @@
     color: #300766;
 }
 
+dl.active_level3 span{
+    color: #9767cc;
+}
+dl.active_level2 span{
+
+}
+dl.active_level1 span{
+
+}
+
 
 footer {
     width: 100%;
@@ -931,16 +941,19 @@ table.table td span.percent {
 
 .ratio__blue,
 .percent__blue {
-    color: #5e99ff;
+    color: #5e99ff !important;
 }
 
 .ratio__orange,
 .percent__orange {
-    color: #ff5e5e;
+    color: #ff5e5e !important;
 }
 
 .pc__only{
     display: block;
+}
+.mobile__only{
+    display: none;
 }
 
 /*---------------------------- 1600 --------------------------------*/
@@ -965,6 +978,9 @@ table.table td span.percent {
 @media (max-width: 1024px) {
     .pc__only{
         display: none;
+    }
+    .mobile__only{
+        display: block;
     }
     body {
         overflow-x: hidden;

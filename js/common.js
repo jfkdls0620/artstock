@@ -27,7 +27,7 @@ $(function(){
             $this.closest(".drop-box").toggleClass("on");
         }
     });
-    
+
     //헤더 아코디언
     $('.drop__content ul.depth').closest("li").on('click','>p',  function() {
         var $this = $(this);
@@ -58,6 +58,18 @@ $(function(){
         $thumList.removeClass("active");
         $this.closest("li").addClass("active");
         $(".jq__thumnail").attr("style", getSrc);
+    });
+
+    //탭 메뉴
+    $(".tab-content").hide();
+    $(".tab-content:first").show();
+    $("ul.tab__list").on("click", "li", function () {
+        var $this = $(this);
+        $("ul.tab__list li").find("span").removeClass("active");
+        $this.find("span").addClass("active");
+        $this.closest(".shadow-box").find(".tab-content").hide();
+        var activeTab = $this.attr("rel");
+        $("#" + activeTab).fadeIn();
     });
 
 });

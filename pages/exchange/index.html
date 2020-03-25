@@ -494,20 +494,6 @@
 </div>
 <script src="../../js/jquery-1.12.4.min.js"></script><!-- 1.12.4 로 변경 -->
 <script src="../../js/common.js"></script>
-<script>
-    $(function () {
-        $(".tab-content").hide();
-        $(".tab-content:first").show();
-        $("ul.tab__list").on("click", "li", function () {
-            var $this = $(this);
-            $("ul.tab__list li").find("span").removeClass("active");
-            $this.find("span").addClass("active");
-            $this.closest(".shadow-box").find(".tab-content").hide();
-            var activeTab = $this.attr("rel");
-            $("#" + activeTab).fadeIn();
-        })
-    });
 
-</script>
 </body>
 </html>

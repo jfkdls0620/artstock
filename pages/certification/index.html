@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>ARTSTOCK</title>
+    <link rel="stylesheet" type="text/css" href="../../css/general.css"/>
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+    <!--// header -->
+
+    <!-- container -->
+    <section class="container">
+        <div class="content">
+            <div class="sub-title">
+                <h2>인증 센터</h2>
+            </div>
+            <div class="content__certification">
+                <div class="content__certification-header">
+                    <ul class="tab__list">
+                        <li><a href="#" class="active">내 계정</a></li>
+                        <li><a href="#">인증 센터</a></li>
+                        <li><a href="#">접속 정보</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="content__certification-content">
+                    <dl class="active_level3">
+                        <dt>회원님의 현재 보안등급은 <span>Level 3</span>입니다.</dt>
+                        <dd>회원님은 <span>현재 입출금 서비스 및 암호화폐 거래</span>를 이용 가능하십니다.</dd>
+                    </dl>
+                    <div class="certification-step">
+                    <ul>
+                        <li class="complete">
+                            <div class="step-box">
+                                <div class="step-box__text">
+                                    <strong>Level 1</strong>
+                                    <dl>
+                                        <dt>이메일 인증</dt>
+                                        <dd>adminfee@artstock.com</dd>
+                                    </dl>
+                                    <button type="button" class="btn" disabled>인증완료</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="complete">
+                            <div class="step-box">
+                                <div class="step-box__text">
+                                    <strong>Level 2</strong>
+                                    <dl>
+                                        <dt>구글 OTP 설정</dt>
+                                        <dd>adminfee@artstock.com</dd>
+                                    </dl>
+                                    <button type="button" class="btn" disabled>인증완료</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="step-box">
+                                <div class="step-box__text">
+                                    <strong>Level 3</strong>
+                                    <dl>
+                                        <dt>실명확인 계좌 등록</dt>
+                                        <dd>adminfee@artstock.com</dd>
+                                    </dl>
+                                    <button type="button" class="btn">인증하기</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="mobile__only mobile-certification">
+                <h2>*Level 3 인증 : 모바일 인증</h2>
+                <div class="border-box active">
+                    <h3>1. 번호 입력</h3>
+                    <input type="password" class="border-box__password">
+                    <div class="btn-area">
+                        <ul>
+                            <li><button type="button" class="btn btn-purple">다음 단계</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-box disabled"> <!--// disabled 제거 -->
+                    <h3>2. 코드 입력</h3>
+                    <div class="border-box__code">
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}"/>
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}"/>
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}"/>
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}"/>
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}"/>
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}"/>
+                    </div>
+                    <div class="btn-area">
+                        <ul>
+                            <li><button type="button" class="btn btn-purple">다음 단계</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// container -->
+
+    <!-- footer -->
+    <!--// footer -->
+
+</div>
+<script src="../../js/jquery-1.12.4.min.js"></script><!-- 1.12.4 로 변경 -->
+<script src="../../js/common.js"></script>
+<script>
+    $(function() {
+        'use strict';
+
+        var $codeBoxelm = $('.border-box__code');
+
+        function goToNextInput(e) {
+            var key = e.which,
+                t = $(e.target),
+                sib = t.next('input');
+
+            if (key != 9 && (key < 48 || key > 57)) {
+                e.preventDefault();
+                return false;
+            }
+
+            if (key === 9) {
+                return true;
+            }
+
+            if (!sib || !sib.length) {
+                sib = $codeBoxelm.find('input').eq(0);
+            }
+            sib.select().focus();
+        }
+
+        function onKeyDown(e) {
+            var key = e.which;
+
+            if (key === 9 || (key >= 48 && key <= 57)) {
+                return true;
+            }
+
+            e.preventDefault();
+            return false;
+        }
+
+        function onFocus(e) {
+            $(e.target).select();
+        }
+
+        $codeBoxelm.on('keyup', 'input', goToNextInput);
+        $codeBoxelm.on('keydown', 'input', onKeyDown);
+        $codeBoxelm.on('click', 'input', onFocus);
+
+    })
+</script>
+</body>
+</html>

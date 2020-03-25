@@ -622,7 +622,7 @@ ul.tag-list li{
     height: 49px;
 }
 .collusion-bottom__buying table td .input-box.input-box__total::after{
-    content:"ATCC";
+    content:"ATC";
     display: inline-block;
     position:absolute;
     font-family: 'Poppins', sans-serif;
@@ -997,29 +997,32 @@ ul.tag-list li{
     font-size:0;
     margin-bottom: 40px;
 }
-.intervention-header ul{
+ul.tab__list{
     display: table;
     width: 100%;
 }
-.intervention-header ul li{
+ul.tab__list li{
     display: table-cell;
     max-width: 0;
     text-align: center;
     padding: 22px 0;
     cursor: pointer;
 }
-.intervention-header ul li span{
+ul.tab__list li span,
+ul.tab__list li a{
     font-size:16px;
     font-weight: 600;
     color: #222834;
     display: inline-block;
     position:relative;
 }
-.intervention-header ul li span.active{
+ul.tab__list li a.active,
+ul.tab__list li span.active{
     color: #9767cc;
     padding-right:17px;
 }
-.intervention-header ul li span.active::after{
+ul.tab__list li a.active::after,
+ul.tab__list li span.active::after{
     content:"";
     position:absolute;
     width: 8px;
@@ -1030,6 +1033,127 @@ ul.tag-list li{
     background-color:#9767cc ;
     border-radius: 50%;
 }
+
+
+/* 인증센터 */
+.content__certification{
+    width: 1570px;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #e4e4e4;
+    margin: 40px auto 133px;
+    padding-bottom: 133px;
+}
+
+.content__certification .content__certification-header{
+    font-size:0;
+    text-align: center;
+    padding: 38px 0 20px;
+}
+
+.content__certification .content__certification-header ul.tab__list{
+    display: inline-block;
+}
+
+.content__certification .content__certification-header ul.tab__list li{
+    display: inline-block;
+    max-width: max-content;
+    padding: 0 90px;
+}
+
+.content__certification hr{
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: #222834;
+}
+
+.content__certification .content__certification-content>dl{
+    padding: 60px 106px 94px;
+    font-weight: 500;
+}
+.content__certification .content__certification-content>dl>dt{
+    font-size:20px;
+    line-height: 24px;
+}
+.content__certification .content__certification-content>dl>dd{
+    font-size:16px;
+    line-height: 19px;
+    color: #242134;
+    padding-top: 13px;
+}
+
+.certification-step{
+    text-align: center;
+    font-size:0;
+}
+.certification-step ul{
+    display: inline-block;
+}
+.certification-step ul li{
+    display: inline-block;
+    padding: 0 63px;
+}
+.certification-step ul li .step-box{
+    border:1px solid #222834;
+    position:relative;
+    width: 298px;
+    height: 398px;
+    border-radius: 10px;
+}
+.certification-step ul li .step-box .step-box__text{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left:0;
+    text-align: center;
+}
+
+.certification-step ul li .step-box .step-box__text strong{
+    display: block;
+    font-size:24px;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+    margin-bottom: 30px;
+}
+.certification-step ul li .step-box .step-box__text dl dt{
+    font-size:20px;
+    line-height: 24px;
+    color:#222834;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.certification-step ul li .step-box .step-box__text dl dd{
+    font-size:16px;
+    line-height: 19px;
+    color:#222834;
+}
+.certification-step ul li .step-box .step-box__text .btn{
+    font-size:20px;
+}
+
+.certification-step ul li.complete .step-box .step-box__text .btn{
+    color:#5e99ff;
+    font-weight: 600;
+    cursor: not-allowed;
+}
+.certification-step ul li.active .step-box{
+    background-color: #9767cc;
+    border:1px solid #300766;
+}
+.certification-step ul li.active .step-box .step-box__text strong{
+    color: #fff;
+}
+.certification-step ul li.active .step-box .step-box__text dl dt,
+.certification-step ul li.active .step-box .step-box__text dl dd{
+    color:#fff;
+}
+
+.certification-step ul li.active .step-box .step-box__text .btn{
+
+}
+
 
 /*---------------------- 1600 ------------------------*/
 @media (max-width: 1600px) {
@@ -1110,6 +1234,10 @@ ul.tag-list li{
     }
     .sub-search .sub-search__select .select-box{
         padding-bottom: 10px;
+    }
+
+    .content__certification{
+        width: calc(100% - 40px);
     }
 }
 
@@ -1465,11 +1593,11 @@ ul.tag-list li{
         min-width: 120px;
     }
 
-    .intervention-header ul{
+    ul.tab__list{
         width: 100%;
         padding-top: 20px;
     }
-    .intervention-header ul li{
+    ul.tab__list li{
         display: inline-block;
         width: 50%;
         max-width: 50%;
@@ -1522,6 +1650,156 @@ ul.tag-list li{
         font-size:14px;
         letter-spacing: -0.025em;
         padding-right: 0;
+    }
+
+    .content__certification{
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    .content__certification hr{
+        height: 20px;
+    }
+    .content__certification .content__certification-header ul.tab__list{
+        display: table;
+        padding: 0;
+    }
+    .content__certification .content__certification-header ul.tab__list li{
+        display: table-cell;
+        width: auto;
+        padding: 0;
+    }
+    ul.tab__list li span,
+    ul.tab__list li a{
+        font-size:14px;
+    }
+    .content__certification-content{
+        padding: 0 32px;
+    }
+    .content__certification .content__certification-content>dl{
+        padding: 39px 0 0;
+    }
+    .content__certification .content__certification-content>dl>dt{
+        font-size:14px;
+        letter-spacing: -0.025em;
+    }
+    .content__certification .content__certification-content>dl>dd{
+        font-size:13px;
+        letter-spacing: -0.025em;
+    }
+    .certification-step{
+        padding-top: 39px;
+    }
+    .certification-step ul{
+        display: block;
+    }
+    .certification-step ul li{
+        padding: 0;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .certification-step ul li .step-box{
+        width: 100%;
+        height: auto;
+        padding: 24px 0;
+    }
+    .certification-step ul li .step-box .step-box__text{
+        position:relative;;
+        top:auto;
+        transform: none;
+
+    }
+    .certification-step ul li .step-box .step-box__text strong{
+        font-size:13px;
+        margin-bottom: 10px;
+    }
+    .certification-step ul li .step-box .step-box__text dl dt{
+        font-size:14px;
+        line-height: 19px;
+    }
+    .certification-step ul li .step-box .step-box__text dl dd{
+        font-size:16px;
+    }
+    .certification-step ul li .step-box .step-box__text .btn{
+        font-size:14px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    /* 모바일 인증 */
+    .mobile-certification{
+        padding-bottom: 60px;
+    }
+    .mobile-certification h2{
+        font-size:24px;
+        line-height: 24px;
+        color: #9767cc;
+    }
+    .border-box{
+        border-radius: 10px;
+        border:1px solid #222834;
+        margin-top: 30px;
+        padding: 59px 0 65px;
+        text-align: center;
+        font-size:0;
+        position:relative;
+    }
+    .border-box h3{
+        color:#222834;
+        font-size:16px;
+        line-height: 19px;
+    }
+    input.border-box__password{
+        width: 70%;
+        margin: 20px auto 0;
+        border:1px solid #000;
+        border-radius: 4px;
+    }
+    .border-box .btn-area{
+        width: 70%;
+        margin-top: 40px;
+    }
+    .border-box .btn-area ul li{
+        width: 100%;
+    }
+    .border-box.active{
+        border:1px solid #651099;
+    }
+    .border-box.disabled{
+        opacity: 0.35;
+    }
+    .border-box.disabled::after{
+        content:"";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index: 10;
+    }
+    .border-box.disabled .btn-area ul li .btn.btn-purple{
+        background-color: #222834;
+    }
+    .border-box .border-box__code{
+        padding-top: 30px;
+    }
+    .border-box .border-box__code input{
+        width: 32px;
+        height: 36px;
+        border:1px solid #222834;
+        border-radius: 4px;
+        margin: 0 4px;
+        text-align: center;
+        transition: all .4s;
+        font-size: 30px;
+        line-height: 30px;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+    .border-box .border-box__code input:focus {
+        border-color: #651099;
+        box-shadow: 0 0 3px #651099 inset;
     }
 }
 
