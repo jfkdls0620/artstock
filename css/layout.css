@@ -733,10 +733,45 @@ footer .copyright {
     overflow: auto;
 }
 
-.modal_pop .m_content .con .btn.btn-apply {
-    background-color: #300766;
-    color: #fff;
+/* 더보기 모달 */
+.modal_pop.modal-exchange .m_content {
+    width: 934px;
+    max-height: 650px;
+    overflow-y: auto;
 }
+.modal-content__more{
+    padding: 0 60px;
+}
+
+.modal_pop.modal-exchange .m_content .tit{
+    padding-top: 32px;
+    padding-bottom: 0;
+}
+.modal_pop.modal-exchange .edit-wrap{
+}
+.modal_pop.modal-exchange .edit-wrap p{
+    font-size:14px;
+    line-height: 17px;
+    color: #222834;
+}
+.modal_pop.modal-exchange .content__exchange{
+    margin-bottom: 0;
+    padding: 0;
+}
+.modal_pop.modal-exchange .content__exchange .exchange-summary__box{
+    padding: 0;
+}
+
+.modal_pop.modal-exchange .modal-content__more .img-box{
+    width: 298px;
+    height: 298px;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.16);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0 auto;
+}
+
 
 /* 버튼 */
 .btn {
@@ -1184,6 +1219,19 @@ table.table td span.percent {
     }
 
     .btn-area.align-left ul li {
+        padding: 0;
+    }
+
+    .modal_pop.modal-exchange .m_content{
+        width: 90%;
+    }
+    .modal_pop.modal-exchange .content__exchange .exchange-summary__box{
+        margin-top: 0;
+    }
+    .modal_pop.modal-exchange .content__exchange .exchange-summary__box .text-box{
+        margin-top: 0;
+    }
+    .modal-content__more{
         padding: 0;
     }
 }

@@ -45,9 +45,9 @@ $(function(){
     });
 
     //서브 체크박스 리스트 토글
-    $(".list-select").on("click",".list-select__toggle",function(){
+    $(".list-select").on("click",".list-select__toggle>p",function(){
         var $this = $(this);
-        $this.toggleClass("open");
+        $this.closest(".list-select__toggle").toggleClass("open");
     });
 
     //공모 디테일 이미지 리스트

@@ -4,6 +4,9 @@
     padding: 88px 106px 66px;
     font-size:0;
 }
+.disabled{
+    background-color: #e6e6e6;
+}
 .profile-box .info-box{
     padding: 18px 0 0;
 }
