@@ -1145,6 +1145,10 @@ ul.tab__list li span.active::after{
     background-color: #9767cc;
     border:1px solid #300766;
 }
+.certification-step ul li.checking .step-box{
+    background-color: #eba553;
+    border:1px solid #300766;
+}
 .certification-step ul li.active .step-box .step-box__text strong{
     color: #fff;
 }
@@ -1155,6 +1159,39 @@ ul.tab__list li span.active::after{
 
 .certification-step ul li.active .step-box .step-box__text .btn{
 
+}
+
+/* 투자내역 */
+.container-invest{
+    width: 1570px;
+    margin: 0 auto;
+}
+.container-invest .select-box{
+    font-size:0;
+    text-align: right;
+    padding-top: 40px;
+}
+.container-invest .select-box .input-box{
+    display:inline-block;
+    width: 192px;
+    height: 40px;
+    text-align: center;
+    margin-left: 20px;
+}
+.container-invest .select-box .input-box select{
+    line-height: 40px;
+    font-size:13px;
+    padding-left: 0;
+}
+
+.container-invest .shadow-box{
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+table.table th span{
+    display: inline-block;
+    font-size:10px;
 }
 
 
@@ -1240,6 +1277,10 @@ ul.tab__list li span.active::after{
     }
 
     .content__certification{
+        width: calc(100% - 40px);
+    }
+
+    .container-invest{
         width: calc(100% - 40px);
     }
 }
@@ -1848,6 +1889,29 @@ ul.tab__list li span.active::after{
         margin-top: -2px;
         border-radius: 2px;
         background-color:#323334 ;
+    }
+
+    .container-invest{
+        width: 100%;
+    }
+    .container-invest .shadow-box{
+        margin-top: 20px;
+    }
+    .container-invest .shadow-box table.table th,
+    .container-invest .shadow-box table.table td{
+        min-width: 120px;
+    }
+    table.table th span{
+        display: block;
+    }
+    .container-invest .select-box .input-box{
+        display: block;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .container-invest ul.tab__list{
+        padding-top: 0;
     }
 }
 

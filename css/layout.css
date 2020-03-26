@@ -411,6 +411,7 @@
     font-size: 40px;
     line-height: normal;
     color: #323334;
+    font-weight: 500;
 }
 
 .container .sub-title h3 {
@@ -972,6 +973,10 @@ table.table td {
 
 table.table td span.percent {
     font-weight: 500;
+}
+
+.overflow-y{
+    overflow-y: auto;
 }
 
 .ratio__blue,
