@@ -1194,11 +1194,140 @@ table.table th span{
     font-size:10px;
 }
 
+/* 자산 현황 */
+.container.container-status .grid-wrap__line{
+    padding: 56px 0;
+    margin: 40px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+.container.container-status .grid-wrap__line h3{
+    font-size:20px;
+    line-height: 20px;
+}
+
+.container.container-status .total-work__list{
+    padding-top: 40px;
+}
+.container.container-status .total-work__list ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin:-20px 0 0 -20px;
+}
+.container.container-status .total-work__list ul li{
+    margin:20px 0 0 20px;
+    -webkit-box-flex: auto;
+    -ms-flex-positive: auto;
+    flex-grow: auto;
+    width: calc(100% * (1/3) - 20px);
+}
+
+.container.container-status .collusion-bottom{
+    padding-top: 0;
+}
+.container.container-status .collusion-bottom>div.fl{
+    width:45%;
+}
+.container.container-status .collusion-bottom>div.fr{
+    width: calc(55% - 20px);
+    min-height: max-content;
+}
+.container.container-status .collusion-bottom>div.fl .shadow-box,
+.container.container-status .collusion-bottom>div.fr .shadow-box{
+    margin-top: 23px;
+    padding: 20px 0;
+    margin-bottom: 60px;
+}
+
+.container.container-status ul.tab__list{
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.container.container-status .tab-content{
+    padding-bottom: 110px;
+}
+table .table-box td{
+    padding: 77px 106px 50px;
+}
+table .table-box .table-box__body{
+    border:1px solid #e4e4e4;
+    background-color: #f8f8f8;
+    padding: 36px 0;
+    text-align: center;
+}
+table .table-box .table-box__body>div{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+table .table-box .table-box__body>div.left-body{
+    padding-right: 190px;
+}
+table .table-box .table-box__body>div>h3{
+    font-size:20px;
+    line-height: 24px;
+    color: #000;
+}
+table .table-box .table-box__body>div .shadow-box{
+    width: 443px;
+    background-color: #fff;
+    padding:37px 49px;
+    font-size:0;
+    margin: 38px 0 0 0;
+}
+
+table .table-box .table-box__body>div .shadow-box .atc__area p{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+table .table-box .table-box__body>div .shadow-box .atc__area p.atc{
+    font-weight: 500;
+}
+table .table-box .table-box__body>div .shadow-box .atc__area p span{
+    line-height: 43px;
+}
+table .table-box .table-box__body>div .atc__area p.date span::after{
+    top:17px;
+}
+.container.container-status .collusion-bottom>div .collusion-bottom__atc {
+    width: 100%;
+}
+
+table .table-box .table-box__body>div.right-body{
+    position:relative;
+    min-width: 220px;
+    height: 181px;
+}
+table .table-box .table-box__body>div.right-body ul{
+    width: 100%;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+table .table-box .table-box__body>div.right-body li{
+    line-height: 19px;
+    font-size:16px;
+    padding: 10px 0;
+}
+table .table-box .table-box__body>div.right-body li span{
+    display: inline-block;
+    min-width: 120px;
+    font-weight: 500;
+}
+
 
 /*---------------------- 1600 ------------------------*/
 @media (max-width: 1600px) {
     .grid-wrap__line{
         padding:60px 0;
+    }
+    .container.container-status .grid-wrap__line{
+        padding: 60px 30px;
     }
     .grid-wrap.grid-wrap__photo .grid-wrap__list{
         margin: -90px 0 0 -60px;
@@ -1283,6 +1412,12 @@ table.table th span{
     .container-invest{
         width: calc(100% - 40px);
     }
+
+    .container.container-status .collusion-bottom>div.fl .shadow-box,
+    .container.container-status .collusion-bottom>div.fr .shadow-box{
+        margin-bottom: 0;
+    }
+
 }
 
 
