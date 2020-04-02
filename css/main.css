@@ -1,0 +1,72 @@
+.container.main-container {
+    padding-top: 130px;
+}
+
+.container.main-container .visual {
+    padding-bottom: 160px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.container.main-container .visual .visual-inner {
+    width: 1570px;
+    height: 626px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container.main-container .visual .visual-inner .text-box{
+    position:absolute;
+    width: auto;
+    top:50%;
+    transform: translateY(-50%);
+    left:0;
+}
+.container.main-container .visual .visual-inner .text-box h2{
+    font-size:48px;
+    line-height: 57px;
+    color: #9767cc;
+    font-weight: 500;
+}
+.container.main-container .visual .visual-inner .text-box p{
+    margin-top: 10px;
+    width: 500px;
+    font-size:14px;
+    line-height: 18px;
+}
+.container.main-container .visual .visual-inner .text-box a{
+    display: inline-block;
+    text-align: center;
+    border:2px solid #323334;
+    border-radius:20px;
+    width: 192px;
+    margin-top: 30px;
+    transition: all .3s;
+}
+.container.main-container .visual .visual-inner .text-box a span{
+    display: inline-block;
+    font-size:13px;
+    line-height: 13px;
+    color: #222834;
+    font-weight: 600;
+    padding:13px 90px 13px 0;
+    position:relative;
+}
+.container.main-container .visual .visual-inner .text-box a span::after{
+    content:"";
+    display: block;
+    position:absolute;
+    top:0;
+    right:-7px;
+    width: 10px;
+    height: 100%;
+    background-image: url("../images/icon/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:10px auto;
+    transform: rotate(-90deg);
+}
+
+.container.main-container .visual .visual-inner .text-box a:hover{
+    border: 2px solid #9767cc;
+}
+
