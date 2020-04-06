@@ -541,7 +541,39 @@ dl.active_level1 span{
 footer {
     width: 100%;
     background-color: #323334;
-    padding: 160px 0;
+    padding: 60px 0 160px;
+    font-size:0;
+}
+footer .footer-ico{
+    text-align: center;
+    padding-bottom: 103px;
+}
+footer .footer-ico ul{
+    display: inline-block;
+}
+footer .footer-ico ul li{
+    display: inline-block;
+    padding: 0 25px;
+}
+footer .footer-ico ul li a{
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+footer .footer-ico ul li a.footer-ico__blog{
+    background-image: url("../images/icon/blog_ico.svg");
+}
+footer .footer-ico ul li a.footer-ico__facebook{
+    background-image: url("../images/icon/fb_ico.svg");
+}
+footer .footer-ico ul li a.footer-ico__instagram{
+    background-image: url("../images/icon/insta_ico.svg");
+}
+footer .footer-ico ul li a.footer-ico__youtube{
+    background-image: url("../images/icon/ytb_ico.svg");
 }
 
 footer .footer-inner {
@@ -1242,5 +1274,10 @@ table.table td span.percent {
 }
 
 @media (max-width: 768px) {
-
+    footer .footer-ico{
+        padding-bottom: 50px;
+    }
+    footer .footer-ico ul li{
+        padding: 0 10px;
+    }
 }
