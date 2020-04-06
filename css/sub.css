@@ -1408,6 +1408,69 @@ table .table-box .table-box__body>div.right-body li span{
 
 }
 
+.container.guide-container{
+    padding-bottom: 80px;
+}
+.container.guide-container .content-box{
+    padding-top: 77px;
+}
+.container.guide-container .content-box .shadow-box{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.container.guide-container .content-box .shadow-box.fl{
+    width: 636px;
+    height: 575px;
+    float:left;
+}
+.container.guide-container .content-box .shadow-box .scroll-y{
+    overflow-y: auto;
+    height: 575px;
+}
+.container.guide-container .content-box .shadow-box.fl ul li dl{
+    padding:26px 60px;
+}
+.container.guide-container .content-box .shadow-box.fl ul li.active{
+    background-color: #323334;
+}
+.container.guide-container .content-box .shadow-box.fl ul li.active dl dt,
+.container.guide-container .content-box .shadow-box.fl ul li.active dl dd{
+    color: #fff;
+}
+.container.guide-container .content-box .shadow-box.fl ul li dl dt{
+    font-size:20px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+.container.guide-container .content-box .shadow-box.fl ul li dl dd{
+    font-size:16px;
+    line-height: 19px;
+}
+.container.guide-container .content-box .shadow-box.fr{
+    width: 848px;
+    float:right;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.container.guide-container .content-box .shadow-box.fr .scroll-y{
+    height:calc(575px - 120px);
+}
+
+.container.guide-container .content-box .shadow-box.fr h2{
+    font-size:30px;
+    line-height: 36px;
+    color: #323334;
+    padding-bottom: 30px;
+}
+.container.guide-container .content-box .shadow-box.fr pre{
+    font-size:14px;
+    line-height: 17px;
+    color: #222834;
+    white-space: pre-line;
+    word-break: break-all;
+    font-family: 'Apple SD Gothic Neo', arial, sans-serif;
+}
 
 /*---------------------- 1600 ------------------------*/
 @media (max-width: 1600px) {
@@ -1509,6 +1572,17 @@ table .table-box .table-box__body>div.right-body li span{
     .container.container-status .total-work__list ul li{
         width: calc(100% * (1/2) - 20px);
     }
+
+    .container.guide-container .content-box{
+        padding: 75px 20px;
+    }
+    .container.guide-container .content-box .shadow-box.fl{
+      width: 45%;
+    }
+    .container.guide-container .content-box .shadow-box.fr{
+        width: 50%;
+    }
+
 }
 
 
@@ -2273,6 +2347,39 @@ table .table-box .table-box__body>div.right-body li span{
     }
     .charge-box .charge-box__list button span{
         font-size:12px;
+    }
+
+    .container.guide-container .content-box{
+        padding: 30px 0;
+    }
+    .container.guide-container .content-box .shadow-box.fl{
+        height: auto;
+        width: 100%;
+    }
+    .container.guide-container .content-box .shadow-box .scroll-y{
+        height: 300px;
+    }
+    .container.guide-container .content-box .shadow-box.fr{
+        width: 100%;
+    }
+    .container.guide-container .content-box .shadow-box.fl ul li dl{
+        padding: 15px 10px;
+    }
+    .container.guide-container .content-box .shadow-box.fl ul li dl dt{
+        font-size:14px;
+        line-height: 18px;
+    }
+    .container.guide-container .content-box .shadow-box.fl ul li dl dd{
+        font-size:13px;
+        line-height: 16px;
+    }
+    .container.guide-container .content-box .shadow-box.fr{
+        margin-top: 30px;
+        padding: 23px 15px;
+    }
+    .container.guide-container .content-box .shadow-box.fr h2{
+        font-size:16px;
+        line-height: 18px;
     }
 }
 
